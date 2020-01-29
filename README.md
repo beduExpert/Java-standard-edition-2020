@@ -1,12 +1,16 @@
 # Java-standard-edition-2020 
-## Módulo: Nombre del modulo
+## Módulo: Java Standard Edition
 
 ### OBJETIVO 
- - Agrega lo que van a aprender en el modulo
+- Comprender la sintaxis del lenguaje Java en la versión 8 para crear programas basicos sin interfaz gráfica.
+- Entender qué es y para qué sirve la programación orientada a objetos.
+- Aprender los tipos de datos soportados por Java, sus características y valores máximos.
+- Comprender las restricciones y reglas del lenguaje.
+- Comprender las caractericas de la programación estructurada.
 
  ### ORGANIZACIÓN DE MÓDULO 
  
- - [Sesión 1](): 
+ - [Sesión 1](Sesion-01): Introducción a la Programación Orientada a Objetos en Java.
  - [Sesión 2](): 
  - [Sesión 3](): 
  - [Sesión 4](): 
