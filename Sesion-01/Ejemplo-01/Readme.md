@@ -1,28 +1,71 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Ejemplo 01: Hola mundo con ItelliJ IDEA
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender cómo crear un nuevo proyecto desde el IDE.
+- Aprender la sintaxis básica de una aplicación Java.
+- Aprender a ejecutar una aplicación desde el IDE
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Tener instalada la última versión del JDK 8.
+2. Tener instalada la última versión de IntelliJ IDEA Community
 
 #### DESARROLLO
 
 Agrega las instrucciones generales del ejemplo o reto
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+1. Abre tu IDE, IntelliJ IDEA, y en el menú `File` selecciona la opción `New -> Project...`.
+![imagen](img\img_01.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+2. En la opción de **Project SDK** asegúrate de tener seleccionada la versión 1.8 (o superior). No selecciones ninguna librería ni framework adicional.
+![imagen](img\img_02.png)
 
-![imagen](https://picsum.photos/200/300)
+3. En la siguiente ventana, NO selecciones la opción para crear un nuevo proyecto dewsde un template; crearemos todos los elementos necesarios a mano en los siguientes pasos.
 
+4. Dale un nombre al proyecto, es tradición en la programación que el primer proyecto con el que estamos aprendiendo a usar un nuevo lenguaje o herramienta se llame **Hola Mundo**.
+![imagen](img\img_03.png)
 
+5. Presiona el botón `Finish` y con esto tu nuevo proyecto deberá aprecer en el panel `Project`, ubicado a la izquierda del IDE:
+![imagen](img\img_04.png)
+
+6. Expande el proyecto *HolaMundo* y en la carpeta llamada `src`, haz clic derecho y selecciona `New -> Package`. Recuerda que un paquete nos permite agrupar los elementos de nuestra aplicación para tenerlos de una forma ordenada.
+![imagen](img\img_05.png)
+
+7. Como nombre del paquete escribe: 
+		
+		org.bedu.java.jse.basico.sesion1.ejemplo1
+		
+![imagen](img\img_06.png)
+
+8. En el nuevo paquete que acabas de crear, haz clic derecho y selecciona la opción `New -> Java Class`.
+![imagen](img\img_07.png)
+
+9. En la ventana emergente, asegúrate de que esté seleccionada la opción `Class` y escribe **HolaMundo** como nombre de la clase.
+![imagen](img\img_08.png)
+
+10. Tu nueva clase aparecerá en el editor de código del IDE:
+![imagen](img\img_09.png)
+
+11. El método ***main*** es el punto de entrada en toda aplicación Java, por lo que debemos escribir uno para poder colocar adentro nuestro código y que este sea ejecutado por la computadora. El método main tiene una *firma* estándar y prácticamente siempre es la misma. Adentro de la clase **HolaMundo** escribe:
+
+```java
+public static void main(String[] args) {
+        
+}
+```
+12. Con esto, lo único que nos falta es escribir el código que se ejecutará. En este caso será la salida en consola de el texto `Hola Mundo`. Para esto escribimos el siguiente código dentro del método *main*:
+
+```java
+System.out.println("Hola Mundo!!");
+```
+
+el archivo completo debe tener el siguiente contenido:
+```java
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola Mundo!!");
+    }
+}
+```
