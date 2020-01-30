@@ -12,6 +12,7 @@
 1. Tener instalado el JDK 8 o superior.
 2. Tener acceso a una teminal o línea de comandos.
 3. Tener acceso a un editor de textos planos (como `notepad`o `nano`).
+4. Tener agregadas en la variable PATH las rutas de las herramientas javac y java.
 
 #### DESARROLLO
 1. En Java usamos los paquetes para organizar y agrupar las clases. Como en este ejemplo no usaremos un IDE lo haremos a mano. Un paquete se representa como una carpeta o directorio en el sistema de archivos del sistema operativo que usamos, por lo tanto, para crear un paquete hay que crear una carpeta. 
