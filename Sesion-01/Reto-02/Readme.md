@@ -1,20 +1,25 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+ ## Reto 02: Recepción de parámetros deste IntelliJ IDEA 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aprender a modificar las configuraciones de ejecución de la aplicación en el IDE.
+- Aprender a recibir parámetros en el método *main* de la aplicación.
+- Aprender a concatenar valores para imprimir los valores en pantalla.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Tener instalada la última versión del JDK 8.
+2. Tener instalada la última versión de IntelliJ IDEA Community
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+- Modifica las modificaciones necesarias en tu clase HolaMundo, del Reto 01, para usar un valor recibido desde la línea de comandos, el cual será tu nombre, para imprimir este como salida de la aplicación; esto nos evitará tener dicho valor en "*código duro*".
+
+- Modifica la configuración de ejecución del IDE para para tu nombre como un argumento de la aplicación.
+
+**Tip #1**: Para concatenar cadenas usamos el operador **+** (signo de suma).
+
+**Tip #2**: Para obtener el valor de tu nombre debes usar la instrucción `args[0]`.
 
 <details>
 
