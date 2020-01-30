@@ -13,16 +13,37 @@
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Un jar, o Java ARchive, es un archivo que nos permite agrupar las clases que conforman nuestra aplicación, junto con alguos metadatos que permiten que este se ejecute como cualquier otra aplicación de nuestra computadora. Un jar es una forma especial de zip, que la JVM puede interpretar para ejecutar nuestra aplicación.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+En este ejemplo vamos a empaquetar nuestra aplicación en un jar para poder ejecutarlo de una forma más sencilla. 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+1. Tomamos el código de cualqiera de los ejemplos, en este caso usaremos como base el Ejemplo 2, en el que realizamos la compilación de las clases de la aplicación desde la línea de comandos. Para poder crear el jar debemos abrir una terminal y situarnos adetro del directorio `out`, que contiene las clases que se generaron.
 
-![imagen](https://picsum.photos/200/300)
+2. Una vez dentro del directorio `out`, ejecutamos el siguiente comando:
+
+		jar cf ejemplo3.jar .
+		
+En donde:
+
+* **jar** es el nombre de la herramienta que usamos para generar estos archivos.
+* **c** indica que se quiere crear un archivo JAR.
+* **f** indica que se quiere que la salida sea a un archivo en vez de a la salida estándar (la consola).
+* **ejemplo3.jar** es el nombre de archivo que se generará.
+* **.** el último argumento indica qué archivos serán incluidos en el jar; el punto indica que se incluirán todas las carpetas y archivos que están en donde nos encontramos.
+
+al ejecutar el comando podemos ver que se ha creado el archivo jar correspondiente.
+
+![imagen](img/img_01.png)
 
 
+Si abres el archivo podrás ver la siguiente estructura:
+
+![imagen](img/img_02.png)
+
+en donde están nuestra clase (**HolaMundo.class**) junto con un archivo de meta información (**META-INF**).
+
+3. Ejecuta ahora la aplicación desde este archivo jar. Para eso, debes usar el siguiente comando:
+
+	java -cp ejemplo3.jar org.bedu.HolaMundo
+	
+Con el que le indicamos al comando `java` que debe buscar la clase **HolaMundo** dentro del archivo **ejemplo3.jar** y ejecutar la clase **org.bedu.HolaMundo**.
