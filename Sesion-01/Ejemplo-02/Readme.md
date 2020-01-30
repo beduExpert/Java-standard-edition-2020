@@ -75,3 +75,17 @@ Al ejecutar el comando anterior no habrá ninguna salida en consola, pero dentro
 ![imagen](img/img_03.png)
 
 
+10. El último paso es ejecutar la aplicación. Para ello debes entrar al directorio `out`.
+
+		cd out
+	
+finalmente, invocar el intérprete de Java, a través de la herramienta `java`, la cual recibe como parámetro el nombre de la clase que ejecutará, de la siguiente forma:
+
+		java org.bedu.HolaMundo
+		
+		
+Si todo está bien escrito, debes ver la siguiente salida en la consola:
+
+![imagen](img/img_04.png)
+
+¡¡Feliciades!!, acabas de terminar el segundo ejemplo.
