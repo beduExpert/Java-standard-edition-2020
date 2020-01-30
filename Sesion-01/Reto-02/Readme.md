@@ -13,7 +13,7 @@
 
 #### DESARROLLO
 
-- Modifica las modificaciones necesarias en tu clase HolaMundo, del Reto 01, para usar un valor recibido desde la línea de comandos, el cual será tu nombre, para imprimir este como salida de la aplicación; esto nos evitará tener dicho valor en "*código duro*".
+- Realiza las modificaciones necesarias en tu clase HolaMundo, del Reto 01, para usar un valor recibido desde la línea de comandos, el cual será tu nombre, para imprimir este como salida de la aplicación; esto nos evitará tener dicho valor en "*código duro*".
 
 - Modifica la configuración de ejecución del IDE para para tu nombre como un argumento de la aplicación.
 
