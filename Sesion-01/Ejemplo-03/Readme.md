@@ -1,15 +1,15 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Ejemplo 03: Creación de archivo Jar
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a empaquetar la aplicación en un archivo **.jar** para su distribución.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Tener instalado el JDK 8 o superior.
+2. Tener acceso a una terminal o línea de comandos.
+3. Tener agregada en la variable PATH la ruta de la herramienta `jar`.
 
 #### DESARROLLO
 
