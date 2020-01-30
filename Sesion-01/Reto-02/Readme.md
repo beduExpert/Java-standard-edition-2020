@@ -1,4 +1,4 @@
- ## Reto 02: Recepción de parámetros deste IntelliJ IDEA 
+ ## Reto 02: Recepción de parámetros desde IntelliJ IDEA 
 
 ### OBJETIVO 
 
@@ -22,13 +22,31 @@
 **Tip #2**: Para obtener el valor de tu nombre debes usar la instrucción `args[0]`.
 
 <details>
+	<summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+1. En el cuerpo del método *main* de la aplicación, modifica la cadena que pasas al método `println` borrando el nombre que muestra (en mi caso **Beto**) y sustitúyelo por el valor recibido como parámetro, usando la instrucción que se muestra en el tip #2; recuerda que para concatenar cadenas debes usar el operador de suma (**+**).
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+```java
+System.out.println("¡Hola " + args[0] + "!");
+```
 
-![imagen](https://picsum.photos/200/300)
+2. Ve a la opción `Edit Configurations...` que aparece al desplegar la lista de opciones para la configuración de la aplicación, que está en la parte superior derecha del editor de código.
 
+![imagen](img/img_01.png)
+
+3. En la ventana que aparece, localiza el campo marcado como `Program arguments:`, y coloca ahí tu nombre.
+
+![imagen](img/img_02.png)
+
+4. Presiona el botón `Ok` para aplicar y guardar la nueva configuración.
+
+5. Ejecuta nuevamente la aplicación y deberás ver en la consola una salida igual a la anterior.
+
+![imagen](img/img_03.png)
+
+Prueba cambiando el parámetro que envías para ver los cambios en la salida de la aplicación. De esta forma evitas tener que estar modificando y volviendo a compilar el código de tu aplicación cada vez que quieras cambiar un valor.
+
+Ahora, averigua cómo puedes hacer esto mismo, pero ejecutando tu aplicación desde una línea de comandos, y no desde el IDE.
+
+
+ </details> 
