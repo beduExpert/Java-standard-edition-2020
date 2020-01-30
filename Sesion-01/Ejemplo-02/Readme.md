@@ -5,12 +5,10 @@
 
 - Aprender a compilar un archivo `.java` desde la línea de comandos, sin necesidad de usar un IDE.
 - Aprender a ejecutar una aplicación desde la línea de comandos.
-- Aprender a recibir parámetros en una aplicación creada usando la línea de comandos.
-
 #### REQUISITOS
 
 1. Tener instalado el JDK 8 o superior.
-2. Tener acceso a una teminal o línea de comandos.
+2. Tener acceso a una terminal o línea de comandos.
 3. Tener acceso a un editor de textos planos (como `notepad`o `nano`).
 4. Tener agregadas en la variable PATH las rutas de las herramientas javac y java.
 
@@ -65,9 +63,9 @@ public class HolaMundo{
 }
 ```
 
-8. Ahora que ya tenemos nuestra clase, el siguiente paso es compilarla. Para esto, primero debes abrir una terminal o línea de comandos y nevegar hasta el directorio raíz del proyecto; este es, el directorio que contiene a la carpeta `src`.
+8. Ahora que ya tenemos nuestra clase, el siguiente paso es compilarla. Para esto, primero debes abrir una terminal o línea de comandos y navegar hasta el directorio raíz del proyecto; este es, el directorio que contiene a la carpeta `src`.
 
-9. Una vez ahí, debes usar el compilador de java `javac`, indicandoque el código fuente (el archivo **.java**) se encuentran en el directorio `src`, y con la opción `d` que los archivos compilados debe colocarlo en el directorio llamado `out`; de la siguiente forma:
+9. Una vez ahí, debes usar el compilador de java `javac`, indicando que el código fuente (el archivo **.java**) se encuentran en el directorio `src`, y con la opción `d` que los archivos compilados debe colocarlos en el directorio llamado `out`; de la siguiente forma:
 
 		javac src/org/bedu/HolaMundo.java -d out		
 
@@ -89,4 +87,4 @@ Si todo está bien escrito, debes ver la siguiente salida en la consola:
 
 ![imagen](img/img_04.png)
 
-¡¡Feliciades!!, acabas de terminar el segundo ejemplo.
+¡¡Felicidades!!, acabas de terminar el segundo ejemplo.
