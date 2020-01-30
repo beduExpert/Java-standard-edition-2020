@@ -16,7 +16,11 @@
 #### DESARROLLO
 1. En Java usamos los paquetes para organizar y agrupar las clases. Como en este ejemplo no usaremos un IDE lo haremos a mano. Un paquete se representa como una carpeta o directorio en el sistema de archivos del sistema operativo que usamos, por lo tanto, para crear un paquete hay que crear una carpeta. 
 
-En un directorio vacío de tu computadora crea una nueva carpeta llamada `org` y dentro de esta otra llamada `bedu`. Para no complicar el ejemplo, usaremos sólo estas dos carpetas.
+En un directorio vacío de tu computadora crea una nueva carpeta llamada `src`, dentro esta una carpeta llamada `org`, y dentro de esta otra llamada `bedu`. A la misma altura que `src` crea una carpeta llamada `out`.
+
+![imagen](img/img_02.png)
+
+Para no complicar el ejemplo, usaremos sólo estas dos carpetas.
 
 2. Dentro de la carpeta `bedu` crea un nuevo archivo llamado HolaMundo.java.
 
@@ -59,3 +63,15 @@ public class HolaMundo{
   }
 }
 ```
+
+8. Ahora que ya tenemos nuestra clase, el siguiente paso es compilarla. Para esto, primero debes abrir una terminal o línea de comandos y nevegar hasta el directorio raíz del proyecto; este es, el directorio que contiene a la carpeta `src`.
+
+9. Una vez ahí, debes usar el compilador de java `javac`, indicandoque el código fuente (el archivo **.java**) se encuentran en el directorio `src`, y con la opción `d` que los archivos compilados debe colocarlo en el directorio llamado `out`; de la siguiente forma:
+
+		javac src/org/bedu/HolaMundo.java -d out		
+
+Al ejecutar el comando anterior no habrá ninguna salida en consola, pero dentro de la carpeta `out` veremos que se crea la misma estructura de carpetas que en `src` y adentro de encuentra ahora un archivo **HolaMundo.class**. Este es el byte code de la aplicación Java.
+
+![imagen](img/img_03.png)
+
+
