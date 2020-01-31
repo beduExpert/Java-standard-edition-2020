@@ -11,7 +11,7 @@
  ### ORGANIZACIÓN DE MÓDULO 
  
  - [Sesión 1](Sesion-01): Introducción a la Programación Orientada a Objetos en Java.
- - [Sesión 2](): 
+ - [Sesión 2](Sesion-02): Tipos de datos y sentencias de control
  - [Sesión 3](): 
  - [Sesión 4](): 
  - [Sesión 5](): 
