@@ -22,9 +22,6 @@ Crearás una aplicación que en este punto sólo desplagará un menú de opcione
 * Eliminar lista de tareas
 
 <details>
-
-        <summary>Solución</summary>
-
 1. Crea un nuevo proyecto Java en IntelliJ IDEA llamado **ListaTareas**.
 
 2. Crea un nuevo paquete llamado `org.bedu.java.jse.basico`.
