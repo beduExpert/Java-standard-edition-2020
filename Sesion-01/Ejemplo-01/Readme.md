@@ -14,8 +14,6 @@
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
-
 1. Abre tu IDE, IntelliJ IDEA, y en el menú `File` selecciona la opción `New -> Project...`.
 ![imagen](img/img_01.png)
 
