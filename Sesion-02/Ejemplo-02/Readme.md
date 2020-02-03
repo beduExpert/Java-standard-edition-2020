@@ -121,11 +121,65 @@ En la última sesión veremos cómo podemos mejorar el formato de la instrucció
 **Nota:** Hay un problema con el switch anterior, y es que acepta valores negativos y mayores a 10. ¿Puedes corregirlo para que solo acepte valores entre 0 y 10?.
 
 
-14. Ahora, crearemos el segundo switch del ejercicio, en el que mostraremos los meses que hacen falta para terminar el año. Comencemos creando una variable que tendrá el nombre del mes actual:
+14. Ahora, crearemos el segundo switch del ejercicio, en el que mostraremos los meses que hacen falta para terminar el año. Lo que buscamos es que si estamos en *marzo*, obtengamos como salida:
+
+		abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre.
+		
+Si estamos en *agosto* obtengamos como salida:
+
+		septiembre, ocutubre, noviembre, diciembre.
+		
+y si estamos en *diciembre* obtengamos una salida en blanco.
+
+15. Comencemos creando una variable que tendrá el nombre del mes actual:
 
 ```java
 String mesActual = "junio";
 ```
 
-15. El **switch** probará el valor de la variable `mesActual`, de esta forma:
+16. El **switch** probará el valor de la variable `mesActual`, de esta forma:
+```java
+switch (mesActual){            
+}
+``` 
 
+17. A continuación agrgearemos los `case`; tendremos uno para cada mes del año, usando literales de tipo `String`
+
+```java
+        switch (mesActual){
+            case "enero":
+                System.out.println("febrero,");
+            case "febrero":
+                System.out.println(" marzo,");
+            case "marzo":
+                System.out.println(" abril,");
+            case "abril":
+                System.out.println(" mayo,");
+            case "mayo":
+                System.out.println(" junio,");
+            case "junio":
+                System.out.println(" julio,");
+            case "julio":
+                System.out.println(" agosto,");
+            case "agosto":
+                System.out.println(" septiembre,");
+            case "septiembre":
+                System.out.println(" octubre,");
+            case "octubre":
+                System.out.println(" noviembre,");
+            case "noviembre":
+                System.out.println("diciembre.");
+        }
+```
+
+fíjate que en este caso no hemos colocado ninguna sentencia **break**, esto nos ayudará a que una vez que se ha encontrado un case de entrada, la ejecución continúe hasta el último case, que en este caso es noviembre. Nota también que no existe un `case` para diciembre, esto es para que en caso de usar ese valor obtengamos una salida vacía.
+
+18. Ejecuta la aplicación y debes obtener una salida similar a la siguiente. Con el valor **marzo**:
+
+![imagen](img/img_02.jpg)
+
+con el valor **agosto**:
+
+![imagen](img/img_03.jpg)
+
+Feliciades, con esto has aplicado correctamente el uso de la sentencia ***switch***.
