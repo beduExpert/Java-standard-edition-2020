@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Aprender las reglas dedeclaración y asignación de valores literales a tipos primitivos.
+- Aprender las reglas de declaración y asignación de valores literales a tipos primitivos.
 
 #### REQUISITOS
 1. Tener instalada la última versión del JDK 8.
@@ -29,7 +29,7 @@
         double valorDouble = 1.5;
 ```
 	
-**Nota:** Recuerda que en el caso de los valores **long** y **float** debemos usar los postfijos ***L*** y ***F*** respectívamente. Intenta colocar estos postfijos como minúsculas y ve qué ocurre; también, intenta eliminar estos postfijos para ver qué ocurre y responde ¿por qué ocurre esto?
+**Nota:** Recuerda que en el caso de los valores **long** y **float** debemos usar los postfijos ***L*** y ***F*** respectivamente. Intenta colocar estos postfijos como minúsculas y ve qué ocurre; también, intenta eliminar estos postfijos para ver qué ocurre y responde ¿por qué ocurre esto?
 
 5. Ahora, imprimiremos los valores de cada una de las variables.
 
@@ -119,8 +119,3 @@ Como podemos ver, este cast es posible y al final obtenemos como salida un núme
 
 Finalmente, el valor mostrado debe ser la letra `F`:
 ![imagen](img/img_02.jpg)
-
-
-![imagen](https://picsum.photos/200/300)
-
-
