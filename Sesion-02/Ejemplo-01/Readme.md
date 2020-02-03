@@ -1,27 +1,62 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Ejemplo 01: Declaración y asignación de valores a tipos primitivos.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender las reglas dedeclaración y asignación de valores literales a tipos primitivos.
 
 #### REQUISITOS
+1. Tener instalada la última versión del JDK 8.
+2. Tener instalada la última versión de IntelliJ IDEA Community
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Crea un nuevo proyecto en IntelliJ IDEA, llamado **Primitivos**.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2. Dentro del proyecto crea un nuevo paquete llamado **org.bedu.java.jse.basico.sesion2.ejemplo1**.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+3. Dentro del paquete anterior crea una nueva clase llamada **Primitivos** y dentro de esta un método **main**.
+
+4. Dentro del método `main` iniciaremos declarando algunas variables primitivas, todas con el valor literal 1:
+
+```java
+        byte valorByte = 1;
+        short valorShort = 1;
+        int valorInt = 1;
+        long valorLong = 1L;
+
+        float valorFloat = 1.5F;
+        double valorDouble = 1.5;
+```
+	
+**Nota:** Recuerda que en el caso de los valores **long** y **float** debemos usar los postfijos ***L*** y ***F*** respectívamente. Intenta colocar estos postfijos como minúsculas y ve qué ocurre; también, intenta eliminar estos postfijos para ver qué ocurre y responde ¿por qué ocurre esto?
+
+5. Ahora, imprimiremos los valores de cada una de las variables.
+
+```java 
+	System.out.println("byte: " + valorByte);
+        System.out.println("short: " + valorShort);
+        System.out.println("int: " + valorInt);
+        System.out.println("long: " + valorLong);
+
+        System.out.println("float: " + valorFloat);
+        System.out.println("double: " + valorDouble);
+```	
+
+6. Ahora, agregaremos una variable tipo `boolean` y otra tipo  `char` e imprimiremos sus valores en la consola.
+
+```java
+	boolean valorBoolean = true;
+        char valorChar = 'B';
+	System.out.println("boolean: " + valorBoolean);
+        System.out.println("char: " + valorChar);
+```
+
+7. Ejecuta la aplicación y ve el resultado obtenido.
+
+8. Ahora, haremos algunos casteos de tipos para ver qué ocurre. Declara la siguiente variable de tipo `float` y luego asígnala a una variable de tipo `int`.
+
+
 
 ![imagen](https://picsum.photos/200/300)
 
