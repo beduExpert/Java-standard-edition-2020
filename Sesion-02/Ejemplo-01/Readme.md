@@ -83,6 +83,44 @@ Como podemos ver, este cast es posible y al final obtenemos como salida un núme
 ```
 ¿Qué ocurre en este caso? ¿puedes explicar por qué?
 
+11. Para terminar, haremos uso de algunos de los operadores aritméticos que se pueden usar con este tipo de variables. Primero mostraremos el valor actual de la variable `valorInt`:
+
+```java
+	System.out.println("valorInt: " + valorInt);
+```
+
+12. Ahora, sumaremos a `valorInt` el valor de 1 y lo asignaremos a la misma variable `valorInt`, para luego mostrar nuevamente su valor:
+
+```java
+	valorInt = valorInt + 1;
+        System.out.println("valorInt: " + valorInt);
+```
+
+13. El operador **++** también puede usarse para incrementar en `1` el valor de una variable numérica, de esta forma:
+
+```java
+ 	valorInt++;
+        System.out.println("valorInt: " + valorInt);
+```
+
+![imagen](img/img_01.jpg)
+
+14. Este mismo operador funciona con variables tipo `char`:
+```java
+ 	valorChar++;
+        System.out.println("valorChar: " + valorChar);
+```
+
+15. Incluso, podemos realizar la suma de un `int` con un `char`, aunque en este caso será necesario hacer un cast de regreso a `char`, ya que la suma de dos tipos de datos enteros siempre regresará el tipo de dato más grande (en este caso el `int`):
+```java
+        valorChar = (char)(valorChar + valorInt);
+        System.out.println("valorChar: " + valorChar);
+```
+
+Finalmente, el valor mostrado debe ser la letra `F`:
+![imagen](img/img_02.jpg)
+
+
 ![imagen](https://picsum.photos/200/300)
 
 
