@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef94c0dc-31e4-44df-acd6-0d6d84e5570f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XEcBMccj0N4p9rkwhOgwyjBOp7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.bedu.java.jse.basico.sesion2.ejemplo1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bedu.java.jse.basico.sesion2.ejemplo1.Primitivos" />
+      <module name="ejemplo1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef94c0dc-31e4-44df-acd6-0d6d84e5570f" name="Default Changelist" comment="" />
+      <created>1580614557936</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580614557936</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580614796456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580614796456" />
+    <state x="627" y="249" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1580614633749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="249" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580614633749" />
+    <state x="627" y="262" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580614794657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="262" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580614794657" />
+    <state x="726" y="384" width="541" height="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580614640508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="384" width="541" height="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1580614640508" />
+    <state width="1893" height="268" key="GridCell.Tab.0.bottom" timestamp="1580708535751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580708535751" />
+    <state width="1893" height="268" key="GridCell.Tab.0.center" timestamp="1580708535751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580708535751" />
+    <state width="1893" height="268" key="GridCell.Tab.0.left" timestamp="1580708535751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580708535751" />
+    <state width="1893" height="268" key="GridCell.Tab.0.right" timestamp="1580708535751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580708535751" />
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1580619367460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580619367460" />
+    <state x="230" y="53" key="new project wizard" timestamp="1580619389233">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="230" y="53" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1580619389233" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1580707523284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580707523284" />
+  </component>
+</project>
