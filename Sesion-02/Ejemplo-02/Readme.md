@@ -23,11 +23,11 @@ Posteriormente, crea otra aplicación que diga cuáles meses faltan para termina
 3. Dentro del paquete anterior crea una nueva clase llamada **Switch** y dentro de esta un método **main**.
 
 4. Dentro del método main iniciaremos declarando una sentencia switch, el cual debe cumplir con las siguientes condiciones:
-	a) Si la calificación es igual a **10** el mensaje debe ser: "**¡Excellente!**".
-	b) Si la calificación es **9** u **8** el mensaje debe ser: **¡Muy bien!**.
-	c) Si la calificación es **7** el mensaje debe ser: **Bien hecho**.
-	d) Si la calificación es **6** el mensaje debe ser: **Pasaste**.
-	e) Si la calificación es menor a **5** el mensaje debe ser: **Mejor vuelve a intentarlo**.
+	* Si la calificación es igual a **10** el mensaje debe ser: "**¡Excelente!**".
+	* Si la calificación es **9** u **8** el mensaje debe ser: **¡Muy bien!**.
+	* Si la calificación es **7** el mensaje debe ser: **Bien hecho**.
+	* Si la calificación es **6** el mensaje debe ser: **Pasaste**.
+	* Si la calificación es menor a **5** el mensaje debe ser: **Mejor vuelve a intentarlo**.
 	
 5. Primero, declararemos una variable de tipo **String** que almacenará el mensaje que se mostrará.
 
@@ -65,7 +65,7 @@ switch(calificacion) {
 
 ```
 
-10. Los siguientes casos, para el **7** y el **6** son idénticos al caso del **10**, probamos los valores individuales y asignámos el mensaje correspondiente:
+10. Los siguientes casos, para el **7** y el **6** son idénticos al caso del **10**, probamos los valores individuales y asignamos el mensaje correspondiente:
 
 ```java
             case 7:
@@ -118,16 +118,16 @@ En la última sesión veremos cómo podemos mejorar el formato de la instrucció
 
 ![imagen](img/img_01.jpg)
 
-**Nota:** Hay un problema con el switch anterior, y es que acepta valores negativos y mayores a 10. ¿Puedes corregirlo para que solo acepte valores entre 0 y 10?.
+**Nota:** Hay un problema con el switch anterior, y es que acepta valores negativos y mayores a 10. ¿Puedes corregirlo para que solo acepte valores entre 0 y 10?
 
 
-14. Ahora, crearemos el segundo switch del ejercicio, en el que mostraremos los meses que hacen falta para terminar el año. Lo que buscamos es que si estamos en *marzo*, obtengamos como salida:
+14. Ahora, crearemos el segundo switch del ejercicio, en el que mostraremos los meses que hacen falta para terminar el año. Lo que buscamos es que, si estamos en *marzo*, obtengamos como salida:
 
 		abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre.
 		
 Si estamos en *agosto* obtengamos como salida:
 
-		septiembre, ocutubre, noviembre, diciembre.
+		septiembre, octubre, noviembre, diciembre.
 		
 y si estamos en *diciembre* obtengamos una salida en blanco.
 
@@ -143,7 +143,7 @@ switch (mesActual){
 }
 ``` 
 
-17. A continuación agrgearemos los `case`; tendremos uno para cada mes del año, usando literales de tipo `String`
+17. A continuación, agregaremos los `case`; tendremos uno para cada mes del año, usando literales de tipo `String`
 
 ```java
         switch (mesActual){
@@ -182,4 +182,4 @@ con el valor **agosto**:
 
 ![imagen](img/img_03.jpg)
 
-Feliciades, con esto has aplicado correctamente el uso de la sentencia ***switch***.
+¡Felicidades!, con esto has aplicado correctamente el uso de la sentencia ***switch***.
