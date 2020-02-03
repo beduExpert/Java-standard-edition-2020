@@ -56,7 +56,32 @@
 
 8. Ahora, haremos algunos casteos de tipos para ver qué ocurre. Declara la siguiente variable de tipo `float` y luego asígnala a una variable de tipo `int`.
 
+```java
+ 	float numFloat = 1.5f;
+        int numInt1 = (int)numFloat;
+        System.out.println("numInt1: " + numInt1);
+	
+```
 
+¿Cuál es la salida de la aplicación? ¿puedes explicar por qué se obtiene esta salida?
+
+9. Ahora, haremos un casteo entre un tipo `char` y un tipo `int`, de la siguiente forma:
+
+```java
+ 	char numChar = 'M';
+        int numInt2 = (int)numChar;
+        System.out.println("numInt2: " + numInt2);
+```
+
+Como podemos ver, este cast es posible y al final obtenemos como salida un número entero. Este número entero es el que representa al caracter como valor ASCII. Puede ver otros valores en esa tabla de valores ascii http://www.asciitable.com/.
+
+10. Finalmente, intentaremos hacer el casteo de un valor `boolean` a un valor  `int`, de la siguiente forma:
+
+```java
+        boolean numBool = true;
+        int numInt3 = (int)numBool;
+```
+¿Qué ocurre en este caso? ¿puedes explicar por qué?
 
 ![imagen](https://picsum.photos/200/300)
 
