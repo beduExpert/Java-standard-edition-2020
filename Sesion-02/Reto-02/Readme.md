@@ -100,6 +100,114 @@ El código debe verse más o menos de la siguiente forma:
 
 ![imagen](img/img_01.jpg)
 
+13. Para la segunda parte crea el segundo **if** del ejercicio, en el que mostrarás los meses que hacen falta para terminar el año. Lo que buscamos es que, si estamos en marzo, obtengamos como salida:
+
+    	abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre.
+
+Para esto no existe una forma directa de hacerlo. En el caso del **switch** podemos hacer que las opciones se ejecuten una después de otra, pero en el caso del **if** esto no es posible, así que tendremos que hacer un pequeño truco.
+
+14. Declara una variable de tipo **String** en el que colocaremos el valor del mes actual:
+
+```java
+	String mesActual = "enero";
+```
+
+15. Declara una serie de **if** validando el valor de **mesActual** y dependiendo del valor imprime el nombre del mes siguiente, de la siguiente forma: 
+```java
+ 	if(mesActual == "enero"){
+            System.out.print("febrero,");
+        }
+        if(mesActual == "febrero"){
+            System.out.print(" marzo,");
+        }
+        if(mesActual == "marzo"){
+            System.out.print(" abril,");
+        }
+        if(mesActual == "abril"){
+            System.out.print(" mayo,");
+        }
+        if(mesActual == "mayo"){
+            System.out.print(" junio,");
+        }
+        if(mesActual == "junio"){
+            System.out.print(" julio,");
+        }
+        if(mesActual == "julio"){
+            System.out.print(" agosto,");
+        }
+        if(mesActual == "agosto"){
+            System.out.print(" septiembre,");
+        }
+        if(mesActual == "septiembre"){
+            System.out.print(" octubre,");
+        }
+        if(mesActual == "octubre"){
+            System.out.print(" noviembre,");
+        }
+        if(mesActual == "noviembre"){
+            System.out.print(" diciembre.");
+        }
+```
+
+16. Si ejecutas la aplicación en este punto, veras que la salida es incorrecta, ya que solo entra a uno de los **if**:
+
+![imagen](img/img_02.jpg)
+
+17. Para hacer que entre en cada uno de los **if** siguientes, modifica el valor de **mesActual** en cada condición, de la siguiente forma:
+
+```java
+	if(mesActual == "enero"){
+            System.out.print("febrero,");
+            mesActual = "febrero";
+        }
+        if(mesActual == "febrero"){
+            System.out.print(" marzo,");
+            mesActual = "marzo";
+        }
+        if(mesActual == "marzo"){
+            System.out.print(" abril,");
+            mesActual = "abril";
+        }
+        if(mesActual == "abril"){
+            System.out.print(" mayo,");
+            mesActual = "mayo";
+        }
+        if(mesActual == "mayo"){
+            System.out.print(" junio,");
+            mesActual = "junio";
+        }
+        if(mesActual == "junio"){
+            System.out.print(" julio,");
+            mesActual = "julio";
+        }
+        if(mesActual == "julio"){
+            System.out.print(" agosto,");
+            mesActual = "agosto";
+        }
+        if(mesActual == "agosto"){
+            System.out.print(" septiembre,");
+            mesActual = "septiembre";
+        }
+        if(mesActual == "septiembre"){
+            System.out.print(" octubre,");
+            mesActual = "octubre";
+        }
+        if(mesActual == "octubre"){
+            System.out.print(" noviembre,");
+            mesActual = "noviembre";
+        }
+        if(mesActual == "noviembre"){
+            System.out.print(" diciembre.");
+        }
+```
+
+18. Ejecuta nuevamente la aplicación, ahora debes obtener la salida correcta:
+
+![imagen](img/img_03.jpg)
+
+¿Se te ocurre otra forma de obtener la salida esperada usando sentencias **if**, **else if** e **if**? ¿Por qué esta solución no funciona con sentencias **else if**?
+
+
 </details> 
 
 
