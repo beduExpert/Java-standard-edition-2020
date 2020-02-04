@@ -12,7 +12,7 @@
 
 #### DESARROLLO
 
-Realiza las modificaciones necesarias del ejemplo 3, para que funcione con while en vez de for
+Realiza las modificaciones necesarias del ejemplo 3, para que funcione con **while** en vez de **for**.
 
 <details>
 	<summary>Solución</summary>
@@ -64,7 +64,7 @@ Nota que como estás incrementando el valor de **i** en la condición, debes ini
 short[] valores = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};	
 ```
 
-7. Recuerda que los arreglos tienen su primer valor en la posición 0, por lo que el índice que uses debe comenzar en este número. Los arreglos contienen un atributo length que indica el número de elementos dentro del arreglo; también, recuerda que cuando se usa el ciclo **while**, la variable que sirve como índice debe declrarse e inicializarse fuera del ciclo:
+7. Recuerda que los arreglos tienen su primer valor en la posición 0, por lo que el índice que uses debe comenzar en este número. Los arreglos contienen un atributo length que indica el número de elementos dentro del arreglo; también, recuerda que cuando se usa el ciclo **while**, la variable que sirve como índice debe declararse e inicializarse fuera del ciclo:
 
 ```java
         short i = 0;
