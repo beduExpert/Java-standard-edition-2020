@@ -68,7 +68,7 @@ short[] valores = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		El valor actual del arreglo es 9
 		El valor actual del arreglo es 10
 
-9. Ahora, haremos una modificación para solo imprimir los elementos pares. Tenemos dos formas de lograr esto. La primera es usando una sentencia **if** y validar, con el operador **%** si el número que recibimos es múltiplo de dos. La segunda es modificando la sección del **for** que realiza el incremento del índice **i** para que en vez de incrementar en **1**, incremente en **2**, de la siguiente forma:
+9. Ahora, haremos una modificación para solo imprimir los elementos pares. Tenemos dos formas de lograr esto. La primera es usando una sentencia **if** y validar, con el operador **%** si el número que recibimos es múltiplo de dos. La segunda es modificando la sección del **for** que realiza el incremento del índice **i** para que, en vez de incrementar en **1**, incremente en **2**, de la siguiente forma:
 
 ```java
 for (int i = 1; i < valores.length; i+=2) {
@@ -80,7 +80,7 @@ Con esta modificación, la salida debe ser similar a la siguiente:
 
 ![imagen](img/img_01.jpg)
 
-10. Finalmente, realizaremos la modificación del ciclo for para recorrer los elemnentos del arreglo, pero usando la versión mejorada de **for**; esta es una versión con una sintaxis más reducida, de la siguiente forma:
+10. Finalmente, realizaremos la modificación del ciclo for para recorrer los elementos del arreglo, pero usando la versión mejorada de **for**; esta es una versión con una sintaxis más reducida, de la siguiente forma:
 
 ```java
 for(short valor : valores){
