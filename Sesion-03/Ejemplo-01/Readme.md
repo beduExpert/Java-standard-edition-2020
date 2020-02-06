@@ -48,4 +48,48 @@
 
 ![imagen](img/img_01.jpg)
 
+9. Ahora, realizaremos esta misma lectura, pero usando la calse **Console**. Lo primero es obtener una instancia de **Console**, para eso usamos la siguiente instrucción:
 
+```java
+	Console console = System.console();
+```
+
+10. Ya con la instancia, es una buena práctica el validar que este objeto se haya podido obtener, ya que habrá casos en la que la aplicación se ejecute en un ambiente sin consola. El realizar la siguiente validación nos ayudará a saber si la aplicación se puede ejecutar correctamente:
+
+```java
+	if (console == null) {
+            System.err.println("No hay consola.");
+            System.exit(1);
+        }
+```
+
+Si no es posible obtener la inst5ancia de la consola, se lanza un error y se termina la ejecución de la aplicación.
+
+11. Una vez que hemos validado que tenemos acceso a la consola, lo siguiente es mostrar el mensaje par escribir el nombre, y luego leer la entrada del usuario. Tenemos dos formas de hacer esto, la primera es muy similar a como lo hicimos con `Scanner`: mostrar un mensaje usando `System.out.println` y luego leyendo la entrada  usando el método **readLine** de la clase **Console**, de la siguiente forma:
+
+```java
+	System.out.println("Escribe tu nombre: ");
+        String nombre = console.readLine();
+```
+
+Sin embargo, la clase **Console** ofrece una forma de combinar las dos acciones anteriores en una sola línea de código, ya que el método **readLine** tiene una otra versión, en la que recibe dos parámetros adicionales, un formato de mensaje, y los valores. No te preocupes mucho por los detalles en este momento, los aclararemos en la última sesión.
+
+```java
+	String nombre = console.readLine("%s", "Escribe tu nombre: ");
+```
+
+12. Para el último paso, mostraremos el mensaje en pantalla:
+
+```java
+	System.out.println("Hola " + nombre);
+```
+
+13. Si ejecutamos la aplicación directament en IntelliJ IDEA, obtendremos un error parecido al siguiente:
+
+![imagen](img/img_02.jpg)
+
+Esto es porque la aplicación no detecta la consola del IDE como una consola real. Para que el ejemplo funcione, tenemos que ejecutarlo desde una línea de comandos, usando la instrucción **java org.bedu.java.jse.basico.sesion3.ejemplo1.Entrada**
+
+![imagen](img/img_03.jpg)
+
+!Feliciades¡ Acabas de interactuar con el usuario, a través del teclado de la computadora.
