@@ -30,7 +30,31 @@ Curso de Java Standar Edition en Bedu: **14**
 
 3. Dentro del paquete anterior crea una nueva clase llamada **Vocales** y dentro de esta un método **main**.
 
-4. Dentro del método main
+4. Dentro del método main lo primero que hay que hacer, es crear una nueva instancia de la clase **Scanner** (o **Console**, dependiendo de qué quieras prácticar).
+
+```java
+	Scanner scanner = new Scanner(System.in);
+```
+
+5. Después, muestra el mensaje que indica al usuario que debe escribir la palabra a la cual se le contarán las vocales. 
+
+```java
+	System.out.print("Escribe la palabra que se analizará: ");
+```
+
+6. Ahora, leemos la palabra que el usuario ingrese para el conteo:
+
+```java
+	String palabra = scanner.nextLine();
+```
+
+7. Ahora, crea una variable que mantendrá el conteo de las vocales:
+
+```java
+	int conteoVocales = 0;
+```
+
+8. El siguiente paso es el más importante, en el que realizarás el conteo. Para eso, 
 
 </details> 
 
