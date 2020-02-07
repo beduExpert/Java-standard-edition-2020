@@ -54,9 +54,39 @@ Curso de Java Standar Edition en Bedu: **14**
 	int conteoVocales = 0;
 ```
 
-8. El siguiente paso es el más importante, en el que realizarás el conteo. Para eso, 
+8. El siguiente paso es el más importante, en el que realizarás el conteo. Para eso, lo primero que puedes hacer es convertir todos los caracteres de la palabra ingresada a letras minúsculas usando el método **toLowerCase** y posteriormente obteniendo todos los caracteres de la cadena:
+
+```java
+	palabra.toLowerCase().toCharArray()
+```
+
+Esos caracteres los recorremos usando un ciclo **for**, que en este caso es un for mejorado:
+
+```java
+	for (char caracter : palabra.toLowerCase().toCharArray()) {
+
+        }
+```
+
+9. Finalmente, dentro del ciclo verificamos si la letra es una vocal, en cuyo caso incrementamos la variable **conteoVocales**:
+```java
+	if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u') {
+		conteoVocales++;
+	}
+```
+
+10. Finalmente, mostramos en la pantalla el texto ingresado por el usuario, junto con el número de vocales que se encontraron:
+
+```java
+	System.out.println(palabra + ": " + conteoVocales);
+```
+
+11. Ejecuta la aplicacion, la salida debe mostrar el número de vocales:
+
+![imagen](img/img_01.jpg
+
 
 </details> 
 
-![imagen](https://picsum.photos/200/300)
+
 
