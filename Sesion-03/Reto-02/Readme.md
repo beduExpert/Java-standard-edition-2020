@@ -14,10 +14,10 @@
 
 - Crea una nueva clase llamada ***Vehiculo***. Cada una de las llantas y el combustible deben estar representadas por una clase.
 - El **Combustible** debe poder tener una cantidad de litros máximos y una de litros actuales, además cada vez que se use se debe gastar un litro y debe mostrar la cantidad de litros que quedan.
-- Las llantas deben tener un ancho, presion y dimámetro. Además, deben poder rodar (mostrando un mensaje que indique que están rodando).
+- Las llantas deben tener un ancho, presión y diámetro. Además, deben poder rodar (mostrando un mensaje que indique que están rodando).
 - El vehículo debe tener la capacidad de que se le coloquen las cuatro llantas y el combustible, además de avanzar (rodando las llantas y usando el combustible), sino hay combustible el auto no debe poder avanzar.
-- Todos los atributos de todos las clases deben poder leerse y escibirse con métodos de la clase (*getter* y *setter*).
-- En el método **main** haz uso del vehículo para avanzar al menos 10 kilometros.
+- Todos los atributos de todas las clases deben poder leerse y escribirse con métodos de la clase (*getter* y *setter*).
+- En el método **main** haz uso del vehículo para avanzar al menos 10 kilómetros.
 
 <details>
 	<summary>Solución</summary>
@@ -104,7 +104,7 @@
     }
 ```
 
-8. Lo siguiente es crear la clase ***Vehiculo***, la cual tendrá como atributos las cuatro llantas y el combustible. Para el caso del combustible, simplemente declararemos un atributo de este tipo, para las llantas usaremos un arreglo de las mismas:
+8. Lo siguiente es crear la clase ***Vehiculo***, la cual tendrá como atributos las cuatro llantas y el combustible. Para el caso del combustible, simplemente declararemos un atributo de este tipo, para las llantas usaremos un arreglo de estas
 
 ```java
 	public class Vehiculo {
@@ -146,7 +146,7 @@
 	}
 ```
 
-11. Para terminar, ahora hay que crear instancias de estas clases y establecer lo valores de sus atributos. Los valores que decidas usar no son relevantes en este momento, así que crea 4 llantas y el combustible:
+11. Para terminar, ahora hay que crear instancias de estas clases y establecer los valores de sus atributos. Los valores que decidas usar no son relevantes en este momento, así que crea 4 llantas y el combustible:
 
 ```java
         Llanta llanta1 = new Llanta();
