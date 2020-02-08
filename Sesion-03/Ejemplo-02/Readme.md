@@ -69,14 +69,14 @@ con esto, terminamos la clase **Lector**. La clase completa se ve de la siguient
 
 ```
 
-8. Ahora, creamos una nueva clase llamada **ContadorCaracteres**. Esta clase será quien realice el conteo de cada uno de los tipos que definimos al inicio del ejemplo. Dentro de esta clase crearemos dos tipos de métodos, los primeros se encargarán de recibir un parámetro de tipo **char** y determinar si es de un tipo determinado; el segundo grupo realizará el conteo de los los caracteres dentro de la palabra que pertenecen a dicho grupo. Comencemos con el método que determinará si el caracter recibido es una vocal:
+8. Ahora, creamos una nueva clase llamada **ContadorCaracteres**. Esta clase será quien realice el conteo de cada uno de los tipos que definimos al inicio del ejemplo. Dentro de esta clase crearemos dos tipos de métodos, los primeros se encargarán de recibir un parámetro de tipo **char** y determinar si es de un tipo determinado; el segundo grupo realizará el conteo de los caracteres dentro de la palabra que pertenecen a dicho grupo. Comencemos con el método que determinará si el caracter recibido es una vocal:
 ```java
     public boolean isVocal(char caracter){
         return (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u');
     }
 ```
 
-9. El siguiente método determinará si el caracter recibido es un número. Para poder hacer esto, nos apoyaremos de el valor *ascii* del caracter. Si revisamos en la tabla ASCII (http://www.asciitable.com/), podemos ver que el valor ascii del **0** es *48*, el del **1** es *49*, el del **2** es *50*, etc., hastá llegar a que el valor del número **9** es *57*. Por lo tanto, la validación pude quedar de la siguiente forma, en la que realizamos el casteo del caracter a un número de tipo **short** y verificamos si su valor ascii está entre el 48 y el 57; de ser así, podemos saber que el caracter es un número:
+9. El siguiente método determinará si el caracter recibido es un número. Para poder hacer esto, nos apoyaremos del valor *ascii* del caracter. Si revisamos en la tabla ASCII (http://www.asciitable.com/), podemos ver que el valor ascii del **0** es *48*, el del **1** es *49*, el del **2** es *50*, etc., hasta llegar a que el valor del número **9** es *57*. Por lo tanto, la validación pude quedar de la siguiente forma, en la que realizamos el casteo del caracter a un número de tipo **short** y verificamos si su valor ascii está entre el 48 y el 57; de ser así, podemos saber que el caracter es un número:
 
 ```java
     public boolean isNumero(char caracter){
@@ -92,7 +92,7 @@ con esto, terminamos la clase **Lector**. La clase completa se ve de la siguient
         return (codigoAscii >= 97 && codigoAscii <= 122) && !isVocal(caracter);
     }
 ```
-11. Finalmete, crearemos el método que determinará si el caracter se trata de un símbolo. Este será el método más sencillo de todos, ya que podemos determinar que si el caracter no es un número, vocal o consonante, se trata de un símbolo. Además, ya tenemos forma de determinar si se trata de alguno de los tipos anteriores:
+11. Finalmente, crearemos el método que determinará si el caracter se trata de un símbolo. Este será el método más sencillo de todos, ya que podemos determinar que, si el caracter no es un número, vocal o consonante, se trata de un símbolo. Además, ya tenemos forma de determinar si se trata de alguno de los tipos anteriores:
 
 ```java
     public boolean isSimbolo(char caracter){
@@ -179,7 +179,7 @@ el método ***cuentaVocales*** completo queda de la siguiente forma:
 
 16. Finalmente, regresaremos al método **main** de la clase **Letras** y haciendo uso de las dos clases que acabamos de crear, implementaremos la funcionalidad del ejercicio.
 
-Lo primero ser´acrear una nueva instancia de la clase **Lector**. Recuerda que para crear estas nuevas instancias es necesario usar la palabra reservada **new**:
+Lo primero será crear una nueva instancia de la clase **Lector**. Recuerda que para crear estas nuevas instancias es necesario usar la palabra reservada **new**:
 
 ```java
 	Lector lector = new Lector();
@@ -191,7 +191,7 @@ Lo primero ser´acrear una nueva instancia de la clase **Lector**. Recuerda que 
 	lector.muestraMensaje("Escribe la palabra: ");
 ```
 
-18. Finalmente, inovando el método **leeEntrada**, obtendemos la palabra o palabras introducidas por el usuario.
+18. Finalmente, invocamos el método **leeEntrada**, obtendremos la palabra o palabras introducidas por el usuario.
 
 ```java
 	String palabra = lector.leeEntrada();
