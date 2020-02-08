@@ -12,8 +12,8 @@
  
  - [Sesión 1](Sesion-01): Introducción a la Programación Orientada a Objetos en Java.
  - [Sesión 2](Sesion-02): Tipos de datos y sentencias de control
- - [Sesión 3](): 
- - [Sesión 4](): 
+ - [Sesión 3](Sesion-03): Clases y objetos
+ - [Sesión 4](Sesion-04): Elementos de una clase
  - [Sesión 5](): 
  - [Sesión 6](): 
  - [Sesión 7](): 
