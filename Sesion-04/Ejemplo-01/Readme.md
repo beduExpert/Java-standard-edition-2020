@@ -19,7 +19,7 @@
 
 3. Dentro del paquete anterior crea una nueva clase llamada **BloquesInicializacion** y dentro de esta un método **main**.
 
-4. Crea una nueva clase llamada ***Alumno***, esta será la que nos ayude a validar el funcionamiento delos bloques de inicialización. 
+4. Crea una nueva clase llamada ***Alumno***, esta será la que nos ayude a validar el funcionamiento de los bloques de inicialización. 
 
 5. Dentro de `Alumno` declara tres variables: `curso`, `objetivo` y `sesion`; las dos primeras de tipo `String` y la última de tipo `byte`:
 
@@ -29,7 +29,7 @@
     	private String objetivo;
 ```
 
-6. Ahora, agrega los *getters* correspondientes para cada una de estoas atributos:
+6. Ahora, agrega los *getters* correspondientes para cada una de estos atributos:
 
 ```java
     public String getCurso() {
@@ -45,7 +45,7 @@
     }
 ```
 
-7. Lo siguiente será agregar un bloque de inicialización, en el que establecereos el estado (valor) de estas variables, de la siguiente forma:
+7. Lo siguiente será agregar un bloque de inicialización, en el que estableceremos el estado (valor) de estas variables, de la siguiente forma:
 
 ```java
     {
@@ -106,7 +106,7 @@ la clase **Alumno** debe estar de la siguiente forma:
 
 ![imagen](img/img_01.jpg)
 
-11. Ahora, haremos una paqueña modificación. Nuevamente en la clase `Alumno`, agrega un nuevo bloque de inicialización debajo del primero, de la siguiente forma:
+11. Ahora, haremos una pequeña modificación. Nuevamente en la clase `Alumno`, agrega un nuevo bloque de inicialización debajo del primero, de la siguiente forma:
 
 ```java
     {
@@ -124,7 +124,7 @@ la clase **Alumno** debe estar de la siguiente forma:
 
 ![imagen](img/img_02.jpg)
 
-como podemos ver, en el segundo bloque se sobreescribe el valor que se había establecido en el primero, para la variable **curso**. ¿Qué crees que ocurra si invertimos el orden de los bloques de inicialización? de la siguiente forma:
+como podemos ver, en el segundo bloque se sobrescribe el valor que se había establecido en el primero, para la variable **curso**. ¿Qué crees que ocurra si invertimos el orden de los bloques de inicialización? de la siguiente forma:
 
 ```java
     {
