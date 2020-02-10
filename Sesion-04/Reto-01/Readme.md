@@ -16,7 +16,7 @@
 - **Rectangulo** Deberá tener tres constructores sobrecargados:
 	- el primero, sin parámetros; el **alto** y el **ancho** deben inicializarse con el valor de **0**. Este constructor debe tener sólo una línea.
 	- el segundo debe tener sólo un número como parámetro, el **alto** y el **ancho** deben inicializarse a ese número. Este constructor debe tener sólo una línea.
-	- el tercero debe tener dos números como parámetros, los dos números deben inicializar el ***alto*** y el ***ancho*** respectívamente.
+	- el tercero debe tener dos números como parámetros, los dos números deben inicializar el ***alto*** y el ***ancho*** respectivamente.
 - Agregar un método en la clase rectángulo que calcule el área y probarlo con los siguientes valores:
 	- 0 * 0 = 0
 	- 2 * 2 = 4
@@ -39,7 +39,7 @@
 		private double ancho;
 	}
 ```
-5. Agrega un constructor que reciba los dos parámetros y asígnalos a las variables correspondientes. Como no hay nunguna restricción del número de líneas de este constuctor, podemos asignar aquí ambas variables de la siguiente forma:
+5. Agrega un constructor que reciba los dos parámetros y asígnalos a las variables correspondientes. Como no hay ninguna restricción del número de líneas de este constructor, podemos asignar aquí ambas variables de la siguiente forma:
 
 ```java
     public Rectangulo(double alto, double ancho) {
