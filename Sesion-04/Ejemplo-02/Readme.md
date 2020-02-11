@@ -28,7 +28,7 @@
     }
 ```
  
-5. Agrega un constructor que reciba un parémtro por cada uno de los tipos atributos de `Automovil`:
+5. Agrega un constructor que reciba un parámetro por cada uno de los tipos atributos de `Automovil`:
 
 ```java
     public Automovil(String marca, String modelo, int anioFabricacion, int kilometraje) {
@@ -53,7 +53,7 @@
     int hash = 0;
 ```
 
-8. Aunque existen muchas formas de implementar el método **hashCode** pero una regla general es que usemos los atributos relevantes de la instancia y hacer una operación con ellos (suma, multiplicación, o combinaciones de estos). En este caso usaremos todos los atributos. Cuando tenemos objetos, podemos aprovechar su propio método **hashCode**, de la siguiente forma:
+8. Aunque existen muchas formas de implementar el método **hashCode**, pero una regla general es que usemos los atributos relevantes de la instancia y hacer una operación con ellos (suma, multiplicación, o combinaciones de estos). En este caso usaremos todos los atributos. Cuando tenemos objetos, podemos aprovechar su propio método **hashCode**, de la siguiente forma:
 
 ```java
     @Override
