@@ -81,9 +81,47 @@ en este caso, estamo usando la función `compare` del wrapper `Float`, pero tamb
 
 en este caso, en vez de comparar a mano cada una de las llantas, usamos el método **Arrays.equals**, que se encarga de revisar si todos los elementos en ambos arreglos son iguales.
 
-7. Para terminar, 
+7. Para terminar, en el método **main** hay que crear todos los lementos para la comparación de dos Vehículos, es decir: 8 llantas, 2 combustibles y 2 vehículos, y establecer todos sus valores. Para no complicarlo, haremos que todas las llantas tengan los mismos valores; lo mismo con el combustible.
+
+**Tip:** Si quieres reducir las líneas de código, puedes crear constructores que reciban todos los parámetros y así evitar estar llamando muchos *setters** en el **main**.
+
+```java
+     public static void main(String[] args) {
+        Llanta llanta1 = new Llanta(205, 16, 35);
+        Llanta llanta2 = new Llanta(205, 16, 35);
+        Llanta llanta3 = new Llanta(205, 16, 35);
+        Llanta llanta4 = new Llanta(205, 16, 35);
+
+        Combustible combustible1 = new Combustible(40, 0);
+
+        Vehiculo vehiculo1 = new Vehiculo(combustible1);
+        vehiculo1.colocaLlantas(llanta1, llanta2, llanta3, llanta4);
+        vehiculo1.llenaTanque();
+
+
+        Llanta llanta5 = new Llanta(205, 16, 35);
+        Llanta llanta6 = new Llanta(205, 16, 35);
+        Llanta llanta7 = new Llanta(205, 16, 35);
+        Llanta llanta8 = new Llanta(205, 16, 35);
+
+        Combustible combustible2 = new Combustible(40, 0);
+
+        Vehiculo vehiculo2 = new Vehiculo(combustible2);
+        vehiculo2.colocaLlantas(llanta5, llanta6, llanta7, llanta8);
+        vehiculo2.llenaTanque();
+
+        System.out.println(vehiculo1.equals(vehiculo2));
+    }
+```
+
+8. Ejecuta el código anterior, el resultado debe ser que ambos objetos son iguales. 
+
+![imagen](img/img_01.jpg)
+
+9. Para comprobar que todo está bien implementado, realiza la modificación de algún valor, por ejemplo: no llenando el tanque de alguno de los vehículos, o cambiando la presión de alguna de las llantas. Con cualquier cambio, el resultado debe ser que los objetos no son iguales:
+
+![imagen](img/img_02.jpg)
 
 </details> 
 
-![imagen](https://picsum.photos/200/300)
 
