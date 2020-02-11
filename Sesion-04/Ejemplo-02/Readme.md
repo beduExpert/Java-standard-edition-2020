@@ -23,7 +23,7 @@
     public class Automovil {
         private String marca;
         private String modelo;
-        private short anioFabricacion;
+        private int anioFabricacion;
         private int kilometraje;
     }
 ```
@@ -31,7 +31,7 @@
 5. Agrega un constructor que reciba un parémtro por cada uno de los tipos atributos de `Automovil`:
 
 ```java
-    public Automovil(String marca, String modelo, short anioFabricacion, int kilometraje) {
+    public Automovil(String marca, String modelo, int anioFabricacion, int kilometraje) {
         this.marca = marca;
         this.modelo = modelo;
         this.anioFabricacion = anioFabricacion;
@@ -53,6 +53,36 @@
     int hash = 0;
 ```
 
-![imagen](https://picsum.photos/200/300)
+8. Aunque existen muchas formas de implementar el método **hashCode** pero una regla general es que usemos los atributos relevantes de la instancia y hacer una operación con ellos (suma, multiplicación, o combinaciones de estos). En este caso usaremos todos los atributos. Cuando tenemos objetos, podemos aprovechar su propio método **hashCode**, de la siguiente forma:
+
+```java
+    @Override
+    public int hashCode() {
+        int hash = 0;
+        hash = marca.hashCode();
+        hash = hash + modelo.hashCode();
+        hash = hash + anioFabricacion;
+        hash = hash + kilometraje;
+        return hash;
+    }
+```
+
+9. En el método `main`, inicializamos tres instancias de `Automovil`, cada una con distintos valores para sus atributos:
+
+```java
+        Automovil auto1 = new Automovil("Ford", "Shelby", 1965, 25000);
+        Automovil auto2 = new Automovil("Bugatti", "Veyron Bleu Centenaire", 2009, 10000);
+        Automovil auto3 = new Automovil("Ferrari", "335 Spider Scaglietti", 1957, 12000);
+```
+
+10. Finalmente, muestra el hashCode de cada auto. Si usaste los mismos valores que en el ejemplo, el número obtenido también debe ser igual al proporcionado:
+
+```java
+        System.out.println("Auto 1, hash: " + auto1.hashCode());
+        System.out.println("Auto 2, hash: " + auto2.hashCode());
+        System.out.println("Auto 3, hash: " + auto3.hashCode());
+```
+
+![imagen](img/img_01.png)
 
 
