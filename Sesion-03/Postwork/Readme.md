@@ -11,11 +11,11 @@
 
 #### DESARROLLO
 
-En este postwork reestrucurarás el código que has escrito hasta ahora, para organizar mejor cada funcionalidad. 
+En este postwork reestructurarás el código que has escrito hasta ahora, para organizar mejor cada funcionalidad. 
 
 También deberás agregar una opción nueva al menú, que permita salir de la aplicación.
 
-Además interactuarás con el usuario a través de las instrucciones recibidas desde el teclado, para que pueda seleccionar una opción del menú.
+Además, interactuarás con el usuario a través de las instrucciones recibidas desde el teclado, para que pueda seleccionar una opción del menú.
 
 
 <details>
@@ -85,7 +85,7 @@ Además interactuarás con el usuario a través de las instrucciones recibidas d
         byte opcionSeleccionada = 0;
 ```
 
-5. Mostraremos el menú de opciones y leeremos la opcón seleccionada por el usuario, dentro de un bloque **do...while** con el objetivo de permitir al usuario seleccionar distintas opciones sin tener que reiniciar la aplicación. Solo en el caso que se seleccione la opción **6** (salir) se teminará la ejecución de la aplicación. Manten el bloque switch para elegir la acción correspondiente dependiendo de la opción seleccionada, pero usa la instancia de **ListasTareas** en vez de una cadena de texto:
+5. Mostraremos el menú de opciones y leeremos la opción seleccionada por el usuario, dentro de un bloque **do...while** con el objetivo de permitir al usuario seleccionar distintas opciones sin tener que reiniciar la aplicación. Solo en el caso que se seleccione la opción **6** (salir) se terminará la ejecución de la aplicación. Mantén el bloque switch para elegir la acción correspondiente dependiendo de la opción seleccionada, pero usa la instancia de **ListasTareas** en vez de una cadena de texto:
 
 ```java
         do {
