@@ -14,7 +14,7 @@
  - [Sesión 2](Sesion-02): Tipos de datos y sentencias de control
  - [Sesión 3](Sesion-03): Clases y objetos
  - [Sesión 4](Sesion-04): Elementos de una clase
- - [Sesión 5](): 
+ - [Sesión 5](Sesion-05): Herencia 
  - [Sesión 6](): 
  - [Sesión 7](): 
  - [Sesión 8]():
