@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Aplicar el uso de constructores para la creación e inicializació de tareas y listas de tareas.
+- Aplicar el uso de constructores para la creación e inicialización de tareas y listas de tareas.
 
 #### REQUISITOS
 
@@ -17,7 +17,7 @@ En cada una de estas nuevas clases agregarás constructores y bloques de inicial
 <details>
         <summary>Solución</summary>
         
-1. Dentro de tu proyecto, crea un nuevo sub paquete llamado **modelo**.
+1. Dentro de tu proyecto, crea un nuevo sub-paquete llamado **modelo**.
 
 ![imagen](img/img_01.jpg)
 
@@ -39,7 +39,7 @@ En cada una de estas nuevas clases agregarás constructores y bloques de inicial
     }
 ```
 
-4. Cada tarea debe tener también una fecha de creación, sin embargo dicha fecha será obtenida de forma automática por el sistema al momento de crear la tarea, y por lo tanto esta puede ser inicializada en un bloque de inicialización:
+4. Cada tarea debe tener también una fecha de creación, sin embargo, dicha fecha será obtenida de forma automática por el sistema al momento de crear la tarea, y por lo tanto esta puede ser inicializada en un bloque de inicialización:
 
 ```java
     {
