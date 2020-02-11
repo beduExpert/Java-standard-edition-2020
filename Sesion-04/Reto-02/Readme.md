@@ -11,7 +11,7 @@
 
 #### DESARROLLO
 
-En este reto, sobrescribiras los métodos para las clases creadas en el reto 2 de la sesión 3: `Combustible`, `Llanta` y `Vehiculo`.
+En este reto, sobrescribirás los métodos para las clases creadas en el reto 2 de la sesión 3: `Combustible`, `Llanta` y `Vehiculo`.
 
 En cada una de las clases deberás revisar:
 
@@ -28,7 +28,7 @@ En cada una de las clases deberás revisar:
 
 3. Dentro del paquete anterior crea una nueva clase llamada **Reto2** y dentro de esta un método **main**.
 
-4. Copia las clases del `Reto 2` de la `Sesión 3`. Comienza con la clase **Combustible** realizando una sobrescritura de equals como la siguiente:
+4. Copia las clases del `Reto 2` de la `Sesión 3`. Comienza con la clase **Combustible** realizando una sobreescritura de equals como la siguiente:
 
 ```java
     @Override
@@ -43,7 +43,7 @@ En cada una de las clases deberás revisar:
     }
 ```
 
-en esto caso estamos comparando al final los valores de los atributos **litrosMaximos** y **litrosActuales**.
+en esto caso, estamos comparando al final los valores de los atributos **litrosMaximos** y **litrosActuales**.
 
 5. Continua con la clase **Llanta**, sobrescribiendo `equals` de la siguiente forma:
 
@@ -61,7 +61,7 @@ en esto caso estamos comparando al final los valores de los atributos **litrosMa
     }
 ```
 
-en este caso, estamo usando la función `compare` del wrapper `Float`, pero también puede hacerse directamente la comparación.
+en este caso, estamos usando la función `compare` del wrapper `Float`, pero también puede hacerse directamente la comparación.
 
 6. A continuación, sobrescribe el método de **Vehiculo**, este podría parecer complicado puesto que tenemos un objeto de tipo `Combustible` y un arreglo de 4 `Llanta`s; sin embargo, como ya hemos sobrescrito los métodos de estas clases el trabajo se simplifica mucho, ya que podemos aprovecharlos:
 
@@ -81,7 +81,7 @@ en este caso, estamo usando la función `compare` del wrapper `Float`, pero tamb
 
 en este caso, en vez de comparar a mano cada una de las llantas, usamos el método **Arrays.equals**, que se encarga de revisar si todos los elementos en ambos arreglos son iguales.
 
-7. Para terminar, en el método **main** hay que crear todos los lementos para la comparación de dos Vehículos, es decir: 8 llantas, 2 combustibles y 2 vehículos, y establecer todos sus valores. Para no complicarlo, haremos que todas las llantas tengan los mismos valores; lo mismo con el combustible.
+7. Para terminar, en el método **main** hay que crear todos los elementos para la comparación de dos Vehículos, es decir: 8 llantas, 2 combustibles y 2 vehículos, y establecer todos sus valores. Para no complicarlo, haremos que todas las llantas tengan los mismos valores; lo mismo con el combustible.
 
 **Tip:** Si quieres reducir las líneas de código, puedes crear constructores que reciban todos los parámetros y así evitar estar llamando muchos *setters** en el **main**.
 
