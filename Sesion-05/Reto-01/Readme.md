@@ -1,29 +1,46 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 01: Bloques estáticos
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aprender el correcta declaración, uso y asignación de miembros estáticos.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Tener instalada la última versión del JDK 8.
+2. Tener instalada la última versión de IntelliJ IDEA Community
+
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En este reto deberás crear una nueva clase con una variable estática llamada valor, la cual deberás declarar de la siguiente forma:
+
+```java
+	private static int VALOR;
+```
+esta variable debe inicializarse fuera de cualquier método, estableciendo el valor de tu preferencia.
+
+Posteriormente, debes crear un método que permita mostrar el valor de la variable anterior.
+
+Para terminar, realiza las modificaciones necesarias para que te asegures que nadie pueda modificar el valor asignado a la variable `VALOR`.
+
+Tu aplicación debera ejecutarse con el siguiente método *main* (no puedes agregar ni modificar ninguna línea de código a este método):
+
+```java
+    public static void main(String[] args) {
+        Bloques bloques = new Bloques();
+
+        Bloques.muestaValor();
+    }
+```
+
+**Nota:** recuerda que los constructores no son considerados métodos.
 
 <details>
-
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
+	
 	<p> Agrega aqui la solucion</p>
 	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
 
 ![imagen](https://picsum.photos/200/300)
 
