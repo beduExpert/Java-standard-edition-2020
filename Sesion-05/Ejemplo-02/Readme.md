@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Aplicar las bases de la herencia, crendo una clase base para posteirormente extenderla.
+- Aplicar las bases de la herencia, creando una clase base para posteriormente extenderla.
 
 #### REQUISITOS
 
