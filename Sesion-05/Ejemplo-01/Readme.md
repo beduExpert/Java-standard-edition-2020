@@ -12,7 +12,7 @@
 
 #### DESARROLLO
 
-En este ejemplo crearemos un conjunto de miembros estátcos dentro de una clase, así como las formas que tenemos de acceder a ellos.
+En este ejemplo crearemos un conjunto de miembros estáticos dentro de una clase, así como las formas que tenemos de acceder a ellos.
 
 1. En el IDE IntelliJ IDEA, crea un nuevo proyecto llamado **MiembrosEstaticos**.
 
@@ -76,7 +76,7 @@ En este ejemplo crearemos un conjunto de miembros estátcos dentro de una clase,
 
 ![imagen](img/img_01.jpg)
 
-como podemos ver en la imagen anterior, en ambas instancias (la primera y la última) el valor de *contadorInstancia* es 1. Esto quiere decir que la variable se crea dentro de cada instnacia nueva e incrementa su valor dentro del constructor, por esta razón el valor siempre será ***1***. También, podemos ver que en ambos casos el valor de *contadorClase* es ***4***. Esto es porque ambas instancias (de hecho todas las instancias) comparten la misma variable; esto es porque la variable pertenece a la clase y no a una instancia en particular. Haremos dos modificaciones al código para comprobar esto.
+como podemos ver en la imagen anterior, en ambas instancias (la primera y la última) el valor de *contadorInstancia* es 1. Esto quiere decir que la variable se crea dentro de cada instancia nueva e incrementa su valor dentro del constructor, por esta razón el valor siempre será ***1***. También, podemos ver que en ambos casos el valor de *contadorClase* es ***4***. Esto es porque ambas instancias (de hecho, todas las instancias) comparten la misma variable; esto es porque la variable pertenece a la clase y no a una instancia en particular. Haremos dos modificaciones al código para comprobar esto.
 
 10. En las últimas líneas de código que agregamos (las sentencias `System.out.println`), estamos invocando al método `getContadorClase()` en cada una de las instancias. Aunque esto es permitido (compila) no es una práctica recomendada ya que puede causar confusión. Lo recomendable es invocar el método directo de la clase, de la siguiente forma:
 
@@ -108,9 +108,9 @@ Las sentencias anteriores quedan de la siguiente forma:
         System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
 ```
 
-la salida de la aplicación debe ser exáctamente la misma que la anterior.
+la salida de la aplicación debe ser exactamente la misma que la anterior.
 
-11. Haremos una última modificación para comprobar que todas las instancias comparten la misma variable. Después de crear una nueva instancia de tipo `Contador` mostrarmos el valor de *contadorClase*, y debemos ver como se incrementa con cada nueva instancia, de la siguiente forma:
+11. Haremos una última modificación para comprobar que todas las instancias comparten la misma variable. Después de crear una nueva instancia de tipo `Contador` mostraremos el valor de *contadorClase*, y debemos ver como se incrementa con cada nueva instancia, de la siguiente forma:
 
 ```java
 	Contador cont1 = new Contador();
