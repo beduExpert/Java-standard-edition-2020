@@ -92,7 +92,34 @@ public class DBA extends Empleado {
 }
 ```
 
-10. Ahora, en el método **main**
+10. Ahora, en el método **main** crea una instancia de **Programador** y una instancia de **DBA** de inicializalas con los valores de tu preferencia.
+
+```java
+        Programador p = new Programador("Ben", (byte)37, LocalDate.of(1982, Month.APRIL, 4), 77435F, "Java");
+        DBA d = new DBA("Jack", (byte)28, LocalDate.of(1993, Month.JANUARY, 21), 45000F, "My SQL");
+```
+
+11. Para terminar, imprime todos los valores de cada uno de los objetos para comprobar que los valores se establecieron de la forma correcta:
+
+```java
+        System.out.println("\n====Datos del programador====");
+
+        System.out.println("Nombre: " + p.getNombre());
+        System.out.println("Edad: " + p.getEdad());
+        System.out.println("Fecha nacimiento: " + p.getFechaNacimiento());
+        System.out.println("Salario: " + p.getSalario());
+        System.out.println("Lenguaje: " + p.getLenguajePrincipal());
+
+        System.out.println("\n====Datos del DBA====");
+        System.out.println("Nombre: " + d.getNombre());
+        System.out.println("Edad: " + d.getEdad());
+        System.out.println("Fecha nacimiento: " + d.getFechaNacimiento());
+        System.out.println("Salario: " + d.getSalario());
+        System.out.println("Herramiena: " + d.getHerramientaConsultas());
+```
+
+![imagen](img/img_02.jpg)
+
 
 </details> 
 
