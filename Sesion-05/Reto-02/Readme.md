@@ -2,7 +2,7 @@
 
 ### OBJETIVO 
 
-- Aplicar la herencia en jeraquías más complejas de objetos.
+- Aplicar la herencia en jerarquías de clases más complejas.
 
 #### REQUISITOS 
 
@@ -18,7 +18,7 @@ En este reto, crearás una jerarquía de 4 clases, de acuerdo con el siguiente d
 
 - En la clase **Persona**, el campo **fechaNacimiento** debe ser **final**.
 - Todos los métodos de todas las clases deben ser privados.
-- Al final deberás probar el funcioamiento de tu aplicación, creando una instancia de **Programador** y una instancia de **DBA** y mostrando todas las propiedades de su árbol de jeraquías hasta la calse **Persona**. 
+- Al final deberás probar el funcionamiento de tu aplicación, creando una instancia de **Programador** y una instancia de **DBA** y mostrando todas las propiedades de su árbol de jerarquías hasta la clase **Persona**. 
 
 <details>
 	<summary>Solución</summary>
@@ -92,7 +92,7 @@ public class DBA extends Empleado {
 }
 ```
 
-10. Ahora, en el método **main** crea una instancia de **Programador** y una instancia de **DBA** de inicializalas con los valores de tu preferencia.
+10. Ahora, en el método **main** crea una instancia de **Programador** y una instancia de **DBA** e inicialízalas con los valores de tu preferencia.
 
 ```java
         Programador p = new Programador("Ben", (byte)37, LocalDate.of(1982, Month.APRIL, 4), 77435F, "Java");
