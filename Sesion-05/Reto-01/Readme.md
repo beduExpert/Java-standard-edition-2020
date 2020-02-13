@@ -21,7 +21,7 @@ Realiza las modificaciones necesarias para que te asegures que nadie pueda modif
 
 Posteriormente, debes crear un método que permita mostrar el valor de la variable anterior.
 
-Tu aplicación debera ejecutarse con el siguiente método *main* (no puedes agregar ni modificar ninguna línea de código a este método):
+Tu aplicación deberá ejecutarse con el siguiente método *main* (no puedes agregar ni modificar ninguna línea de código a este método):
 
 ```java
     public static void main(String[] args) {
@@ -44,7 +44,7 @@ Tu aplicación debera ejecutarse con el siguiente método *main* (no puedes agre
 
 4. Dentro del método `main` coloca el código que se encuentra en las instrucciones del reto.
 
-5. De acuerdo al código, debe haber una calse llamada **Bloques** y dentro de esta la variable **valor** que se encuentra en las instrucciones.
+5. De acuerdo con el código, debe haber una clase llamada **Bloques** y dentro de esta la variable **valor** que se encuentra en las instrucciones.
 
 ```java
 	public class Bloques {
@@ -58,7 +58,7 @@ Tu aplicación debera ejecutarse con el siguiente método *main* (no puedes agre
 	private static final int valor;
 ```
 
-al tener una variable **static final**, esta se convierte en una constante, y recordemos que de acuerdo a las convenciones de nombres de Java, las constantes deben nombrarse con todas las letras en mayúsculas, por lo que la definición queda de la siguiente forma:
+al tener una variable **static final**, esta se convierte en una constante, y recordemos que, de acuerdo con las convenciones de nombres de Java, las constantes deben nombrarse con todas las letras en mayúsculas, por lo que la definición queda de la siguiente forma:
 
 ```java
 	private static final int VALOR;
