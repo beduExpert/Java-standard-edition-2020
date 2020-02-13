@@ -86,7 +86,7 @@ como podemos ver en la imagen anterior, en ambas instancias (la primera y la úl
 cambia a:
 
 ```java
-	System.out.println("cont1.contadorClase: " + Contador.getContadorClase());
+	System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
 ```
 
 y
@@ -96,17 +96,37 @@ y
 ```
 también cambia a:
 ```java
-	System.out.println("cont4.contadorClase: " + Contador.getContadorClase());
+	System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
 ```
 
 Las sentencias anteriores quedan de la siguiente forma:
 ```java
 	System.out.println("cont1.contadorInstancia: " + cont1.getContadorInstancia());
-        System.out.println("cont1.contadorClase: " + Contador.getContadorClase());
+        System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
         System.out.println();
         System.out.println("cont4.contadorInstancia: " + cont4.getContadorInstancia());
-        System.out.println("cont4.contadorClase: " + Contador.getContadorClase());
+        System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
 ```
 
 la salida de la aplicación debe ser exáctamente la misma que la anterior.
+
+11. Haremos una última modificación para comprobar que todas las instancias comparten la misma variable. Después de crear una nueva instancia de tipo `Contador` mostrarmos el valor de *contadorClase*, y debemos ver como se incrementa con cada nueva instancia, de la siguiente forma:
+
+```java
+	Contador cont1 = new Contador();
+        System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
+
+        Contador cont2 = new Contador();
+        System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
+
+        Contador cont3 = new Contador();
+        System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
+
+        Contador cont4 = new Contador();
+        System.out.println("Contador.contadorClase: " + Contador.getContadorClase());
+```
+
+12. Al ejecutar la aplicación debemos obtener la siguiente salida:
+
+![imagen](img/img_02.jpg)
 
