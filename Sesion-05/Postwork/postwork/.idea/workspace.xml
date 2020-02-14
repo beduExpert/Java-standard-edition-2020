@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c71ca023-b911-49f4-97f4-38bac77ffae0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X8a6R9TD9sbtfKW0lYVfBHeYev" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ListaTareasMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bedu.java.jse.basico.ListaTareasMain" />
+      <module name="ListaTareas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bedu.java.jse.basico.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ListaTareasMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c71ca023-b911-49f4-97f4-38bac77ffae0" name="Default Changelist" comment="" />
+      <created>1580430000585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580430000585</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="721" y="168" key="#com.intellij.ide.util.MemberChooser" timestamp="1581637742459">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="168" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581637742459" />
+    <state width="1893" height="462" key="GridCell.Tab.0.bottom" timestamp="1581638373304">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="462" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581638373304" />
+    <state width="1893" height="462" key="GridCell.Tab.0.center" timestamp="1581638373304">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="462" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581638373304" />
+    <state width="1893" height="462" key="GridCell.Tab.0.left" timestamp="1581638373304">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="462" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581638373304" />
+    <state width="1893" height="462" key="GridCell.Tab.0.right" timestamp="1581638373304">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="462" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581638373304" />
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1581563456947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581563456947" />
+    <state x="230" y="53" key="new project wizard" timestamp="1581563477791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="230" y="53" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1581563477791" />
+  </component>
+</project>
