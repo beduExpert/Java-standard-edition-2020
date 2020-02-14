@@ -3,7 +3,7 @@
 ### OBJETIVO
 
 - Modificar los atributos de los objetos actuales para evitar su modificación.
-- Leer los valores de algunas de las opciones existenes.
+- Leer los valores de algunas de las opciones existentes.
 
 #### REQUISITOS
 
@@ -13,7 +13,7 @@
 
 En este postwork deberás marcar las fechas de creación de las clases **ListaTareas** y **Tarea** como final, para evitar su posterior modificación. Para esto deberás modificar o eliminar algunos de los métodos ya existentes.
 
-Además, leeras desde el teclado algunos de los valores de las opciones que se usan en **ListasTareas**.
+Además, leerás desde el teclado algunos de los valores de las opciones que se usan en **ListasTareas**.
 
 <details>
         <summary>Solución</summary>
@@ -39,7 +39,7 @@ private final LocalDate fechaCreacion;
     }
 ```
 
-4. En la clase **ListasTareas**, dentro de los métodos solamente estamos mostrando el nombre de la opción seleccionada. Leeremos algunos valores adicionales en estos métodos, y en la siguiente sesión comenzaremos a crear realmente los elementos de las listas de tareas que harán que la aplicación tenga una funcionalidad rica y útil. Agrega en este clase una nueva instancia de **Lector**, que será la que nos permita leer las opciones ingresadas por el usuario:
+4. En la clase **ListasTareas**, dentro de los métodos solamente estamos mostrando el nombre de la opción seleccionada. Leeremos algunos valores adicionales en estos métodos, y en la siguiente sesión comenzaremos a crear realmente los elementos de las listas de tareas que harán que la aplicación tenga una funcionalidad rica y útil. Agrega en esta clase una nueva instancia de **Lector**, que será la que nos permita leer las opciones ingresadas por el usuario:
 
 ```java
 private Lector lector = new Lector();
@@ -85,7 +85,4 @@ private Lector lector = new Lector();
 9. Ejecuta tu aplicación, todo debe seguir funcionando correctamente.
 
 </details>
-
-![imagen](https://picsum.photos/200/300)
-
 
