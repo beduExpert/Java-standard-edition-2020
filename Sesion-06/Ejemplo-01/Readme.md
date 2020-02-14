@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Aprener cómo aplicar el polimorfismo de tipo en tiempo de ejecución.
+- Aprender cómo aplicar el polimorfismo de tipo en tiempo de ejecución.
 
 #### REQUISITOS
 
@@ -12,7 +12,7 @@
 
 #### DESARROLLO
 
-En este ejemplo, crearemos una jerarquía de obejtos y veremos como en ejecución estos pueden asignarse a distintos tipos de variables.
+En este ejemplo, crearemos una jerarquía de objetos y veremos cómo en ejecución estos pueden asignarse a distintos tipos de variables.
 
 1. En el IDE IntelliJ IDEA, crea un nuevo proyecto llamado **Polimorfismo**.
 
