@@ -1,27 +1,27 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Ejemplo 03: Uso de colecciones
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a usar las colecciones `List` y `Set` para agregar y obtener elementos de tipos integrados en Java y de tipos propios.
+- Aprender la relación del método `equals` y las colecciones.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Tener instalada la última versión del JDK 8.
+2. Tener instalada la última versión de IntelliJ IDEA Community.
+
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. En el IDE IntelliJ IDEA, crea un nuevo proyecto llamado **Colecciones**.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2. Dentro del proyecto crea un nuevo paquete llamado **org.bedu.java.jse.basico.sesion6.ejemplo3**.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+3. Dentro del paquete anterior crea una nueva clase llamada **Colecciones** y dentro de esta un método **main**.
+
+4. Dentro del método **main**
+
+
 
 ![imagen](https://picsum.photos/200/300)
 
