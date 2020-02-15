@@ -1,9 +1,9 @@
 
-## Ejemplo 02: Super y sobrescritura de métodos.
+## Ejemplo 02: Super y sobreescritura de métodos.
 
 ### OBJETIVO
 
-- Aprender a realizar la sobrescritura de métodos definidos en la clase padre, por uno o más de sus subtipos.
+- Aprender a realizar la sobreescritura de métodos definidos en la clase padre, por uno o más de sus subtipos.
 - Aprender a usar la referencia `super` en una subclase, para hacer referencia a elementos de la clase base.
 
 #### REQUISITOS
@@ -74,7 +74,7 @@
 	}
 ```
 
-9. Sobresribe el método **mostrarDatos**, de forma que se invoque el método de la clase **Profesor** y además los valores de los atributos propios de **ProfesorInterino**.
+9. Sobrescribe el método **mostrarDatos**, de forma que se invoque el método de la clase **Profesor** y además los valores de los atributos propios de **ProfesorInterino**.
 ```java
     public void mostrarDatos() {
         super.mostrarDatos();
