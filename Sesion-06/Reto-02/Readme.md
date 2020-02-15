@@ -12,7 +12,7 @@
 
 #### DESARROLLO
 
-En este reto deberás crear una clase base, y un conjunto de clases derivadas que sobreescriban uno de los métodos de la clase base y lograr que dinámicamente se llame el método del tipo correcto de objeto.
+En este reto deberás crear una clase base, y un conjunto de clases derivadas que sobrescriban uno de los métodos de la clase base y lograr que dinámicamente se llame el método del tipo correcto de objeto.
 
 - Deberás tener una clase base **Figura** con un método **formulaCalculaArea** que no reciba parámetros ni regrese ningún valor. 
 - El método anterior deberá imprimir la fórmula para el cálculo del área de la figura correspondiente.
@@ -40,7 +40,7 @@ public abstract class Figura {
 }
 ```
 
-5. Dentro de esta clase, declara un método llamado **formulaCalculaArea**, el cual también será abstracto. De esta forma las clases que extiendan de **Figura** se verán obligadas a sobrescirbir este método:
+5. Dentro de esta clase, declara un método llamado **formulaCalculaArea**, el cual también será abstracto. De esta forma las clases que extiendan de **Figura** se verán obligadas a sobrescribir este método:
 
 ```java
 	public abstract void formulaCalculaArea();
@@ -76,7 +76,7 @@ class Cuadrado extends Rectangulo{
 }
 ```
 
-9. A continuación, crea una variable de tipo **Figura**; puedes inicialzar su valor a `null` o algún otro tipo. Esta será la única variable que ***declaremos*** en la aplicación:
+9. A continuación, crea una variable de tipo **Figura**; puedes inicializar su valor a `null` o algún otro tipo. Esta será la única variable que ***declaremos*** en la aplicación:
 ```java
 Figura figura = null;
 ```
@@ -86,7 +86,7 @@ Figura figura = null;
 figura = new Triangulo();
 ```
 
-12. Puedes invocar directament el método **formulaCalculaArea** de la variable **figura**, o puedes aprovechar el polimorfismo de esta clase para hacerlo a través de un método, que recibirá como parámetro un tipo **Figura**, esto ayudará a escribir menos código:
+12. Puedes invocar directamente el método **formulaCalculaArea** de la variable **figura**, o puedes aprovechar el polimorfismo de esta clase para hacerlo a través de un método, que recibirá como parámetro un tipo **Figura**, esto ayudará a escribir menos código:
 ```java
     public static void llamaCalculaArea(Figura figura) {
         figura.formulaCalculaArea();
