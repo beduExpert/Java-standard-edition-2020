@@ -15,8 +15,8 @@
  - [Sesión 3](Sesion-03): Clases y objetos
  - [Sesión 4](Sesion-04): Elementos de una clase
  - [Sesión 5](Sesion-05): Herencia 
- - [Sesión 6](): 
- - [Sesión 7](): 
- - [Sesión 8]():
+ - [Sesión 6](Sesion-06): Polimorfismo 
+ - [Sesión 7](Sesion-07): Colecciones
+ - [Sesión 8](Sesion-08): Manejo de archivos
 
 
