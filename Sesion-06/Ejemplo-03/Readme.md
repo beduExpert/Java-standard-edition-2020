@@ -129,3 +129,45 @@ podemos observar dos cosas de esta salida. La primera es que los elementos apare
 
 podemos ver que nuevamente los elementos los recuperamos en el mismo orden en el que los ingresamos a la lista.
 
+17. Para terminar, repetiremos lo mismo pero usando un **Set**:
+```java
+        Set<Numero> setNumeros = new HashSet<>();
+        setNumeros.add(new Numero("uno"));
+        setNumeros.add(new Numero("dos"));
+        setNumeros.add(new Numero("tres"));
+        setNumeros.add(new Numero("tres"));
+        setNumeros.add(new Numero("cuatro"));
+        setNumeros.add(new Numero("cinco"));
+        
+        for (Numero numero : setNumeros){
+            System.out.println(numero.getNombre());
+        }
+```
+
+18. Al ejecutar la aplicación, la salida debe ser similar a la siguiente:
+
+![imagen](img/img_04.jpg)
+
+podemos ver que nuevamente la salida está en un orden distinto al que usamos para ingresar los elementos. También, podemos ver que ocurrió algo distinto a la última vez, y es que "tres" aparece dos veces en la salida anterior. Esto ocurre porque **Set** hace uso del método **equals** para saber si el objeto ya existe dentro de la colección. En este caso no hemos sobrescrito el método **equals** y por lo tanto, la colección no tiene forma de saber si ya tiene el elemento. 
+
+19. Para corregir el problema anterior, sobrescribiremos los métodos **equals** y **hashCode** en la clase **Numero**:
+```java
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Numero numero = (Numero) o;
+
+        return nombre != null ? nombre.equals(numero.nombre) : numero.nombre == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return nombre != null ? nombre.hashCode() : 0;
+    }
+```
+
+20. Si volvemos a ejecutar la aplicación, ahora la salida debe ser similar a la siguiente, en la que podemos ver que ya solo aparece un elemento "tres":
+
+![imagen](img/img_05.jpg)
