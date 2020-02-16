@@ -1,16 +1,19 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Sesión 07: Colecciones
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Entender las características particulares de cada tipo de colección en Java.
 
 #### ORGANIZACION DE LA CLASE 
 
 - Tema que veran en el ejemplo
-
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+- Tema que veran en el ejemplo
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+	
+- Tema que veran en el ejemplo
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
