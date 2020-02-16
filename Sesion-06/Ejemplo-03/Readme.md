@@ -25,12 +25,12 @@
   List<String> listaCadenas
 ```
 
-5. Ahora hay que asignar la lista a un tipo concreato de objeto. Recuerda que `List` es una interface y por lo tanto no podemos crear directamente una instancia de ella, sino que debemos usar una clase que implemente dicha interface. Existen diversas implementaciones de `List`, de las cuales hablaremos en la siguiente sesión. En este momento sólo debemos saber que **ArrayList** es una clase que implementa la interface `List`, así que inicializamos la variable anterior a este tipo:
+5. Ahora hay que asignar la lista a un tipo concreto de objeto. Recuerda que `List` es una interface y por lo tanto no podemos crear directamente una instancia de ella, sino que debemos usar una clase que implemente dicha interface. Existen diversas implementaciones de `List`, de las cuales hablaremos en la siguiente sesión. En este momento sólo debemos saber que **ArrayList** es una clase que implementa la interface `List`, así que inicializamos la variable anterior a este tipo:
 
 ```java
   List<String> listaCadenas = new ArrayList<>();
 ```
-6. Lo siguiente es ingresar valores en la lista. Para eso usams el método **add** declarado en la interface `List`, el ingresar los objetos en la lista es directo, simplementa pasamos como parámetro el objeto que queremos ingresar. Agregamos los nombres de los números del `uno` al `cinco`; ingresaremos dos veces el número `tres` para hacer una prueba más adelante:
+6. Lo siguiente es ingresar valores en la lista. Para eso usamos el método **add** declarado en la interface `List`, el ingresar los objetos en la lista es directo, simplemente pasamos como parámetro el objeto que queremos ingresar. Agregamos los nombres de los números del `uno` al `cinco`; ingresaremos dos veces el número `tres` para hacer una prueba más adelante:
 ```java
         listaCadenas.add("uno");
         listaCadenas.add("dos");
@@ -40,7 +40,7 @@
         listaCadenas.add("cinco");
 ```
 
-7. A continuación, iteraremos o recorreremos la *listaCadenas* para posteriormente extraer cada una de las cadenas que acabamos de ingresar. Hay varias formas de hacer esto, pero lo más común es usar la instrucción ***for***, ya sea la instrucción "normal" o la mejorada. Con el ***for*** normal es necesario obtener primero el número de elementos en la colección, usando el método **size()** y posteriormente obtener el elemento que queremos usando el métódo **get(i)**, de la siguiente forma:
+7. A continuación, iteraremos o recorreremos la *listaCadenas* para posteriormente extraer cada una de las cadenas que acabamos de ingresar. Hay varias formas de hacer esto, pero lo más común es usar la instrucción ***for***, ya sea la instrucción "normal" o la mejorada. Con el ***for*** normal es necesario obtener primero el número de elementos en la colección, usando el método **size()** y posteriormente obtener el elemento que queremos usando el método **get(i)**, de la siguiente forma:
 
 ```java
         for (int i = 0; i < listaCadenas.size(); i++) {
@@ -78,7 +78,7 @@ Set<String> setCadenas = new HashSet<>();
         setCadenas.add("cinco");
 ```
 
-11. Mostraremos imprimeremos los valores sel **Set** usando un ciclo ***for*** mejorado. 
+11. Mostraremos los valores del **Set** usando un ciclo ***for*** mejorado. 
 ```java
         for (String cadena : setCadenas){
             System.out.println(cadena);
@@ -89,9 +89,9 @@ Set<String> setCadenas = new HashSet<>();
 
 ![imagen](img/img_02.jpg)
 
-podemos observar dos cosas de esta salida. La primera es que los elementos aparecen en un orden diferente del que los fuimos ingresando en el **Set**, y la segunda es que sólo podemos ver un elemento "tres" y no los dos que ingresamos. Eso es porque los **Set** no admiten elemento repetidos; es por eso que sólo ha quedado un elemento "tres".
+podemos observar dos cosas de esta salida. La primera es que los elementos aparecen en un orden diferente del que los fuimos ingresando en el **Set**, y la segunda es que sólo podemos ver un elemento "tres" y no los dos que ingresamos. Eso es porque los **Set** no admiten elemento repetidos; es por eso por lo que sólo ha quedado un elemento "tres".
 
-13. Veamos cómo hacer esto mismo pero usando una clase propia. Creamos una nueva clase llamada **Numero** que tendrá una sola propiedad ***nombre***. Proporcionaremos un constructor para inicializar esta propiedad, y un método *getter* para recuperar su valor.
+13. Veamos cómo hacer esto mismo, pero usando una clase propia. Creamos una nueva clase llamada **Numero** que tendrá una sola propiedad ***nombre***. Proporcionaremos un constructor para inicializar esta propiedad, y un método *getter* para recuperar su valor.
 ```java
     public class Numero {
         private String nombre;
@@ -129,7 +129,7 @@ podemos observar dos cosas de esta salida. La primera es que los elementos apare
 
 podemos ver que nuevamente los elementos los recuperamos en el mismo orden en el que los ingresamos a la lista.
 
-17. Para terminar, repetiremos lo mismo pero usando un **Set**:
+17. Para terminar, repetiremos lo mismo, pero usando un **Set**:
 ```java
         Set<Numero> setNumeros = new HashSet<>();
         setNumeros.add(new Numero("uno"));
@@ -148,7 +148,7 @@ podemos ver que nuevamente los elementos los recuperamos en el mismo orden en el
 
 ![imagen](img/img_04.jpg)
 
-podemos ver que nuevamente la salida está en un orden distinto al que usamos para ingresar los elementos. También, podemos ver que ocurrió algo distinto a la última vez, y es que "tres" aparece dos veces en la salida anterior. Esto ocurre porque **Set** hace uso del método **equals** para saber si el objeto ya existe dentro de la colección. En este caso no hemos sobrescrito el método **equals** y por lo tanto, la colección no tiene forma de saber si ya tiene el elemento. 
+podemos ver que nuevamente la salida está en un orden distinto al que usamos para ingresar los elementos. También, podemos ver que ocurrió algo distinto a la última vez, y es que "tres" aparece dos veces en la salida anterior. Esto ocurre porque **Set** hace uso del método **equals** para saber si el objeto ya existe dentro de la colección. En este caso no hemos sobrescrito el método **equals** y, por lo tanto, la colección no tiene forma de saber si ya tiene el elemento. 
 
 19. Para corregir el problema anterior, sobrescribiremos los métodos **equals** y **hashCode** en la clase **Numero**:
 ```java
