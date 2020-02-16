@@ -13,7 +13,7 @@
 
 En este reto usarás la clase **Collections** para realizar búsquedas y ordenamientos en una lista de cadenas.
 
-- Revisa la documentación de la clase Collections (https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html), de esta forma tendrás una ídea de los métodos que podrías usar para llevar a cabo el reto.
+- Revisa la documentación de la clase Collections (https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html), de esta forma tendrás una idea de los métodos que podrías usar para llevar a cabo el reto.
 - Crea una lista de cadenas llamada **listaFrutas** y llénala con los siguientes elementos:
 	- Plátanos
 	- Sandía
@@ -22,13 +22,13 @@ En este reto usarás la clase **Collections** para realizar búsquedas y ordenam
 	- Naranja
 	- Kiwi
 	
-- Voltea el órden de los elementos de la colección. Esto quiere decir que el `Kiwi` deberá ser el primer elemento en la lista y los `Plátanos` los últimos.
-- Búsca cuál es el elemento más pequeño, o sea, si los ordenáramos alfabéticamente ¿cuál sería el primer elemento en la lista?
-- Búsca cuál es el elemento más grande, o sea, si los ordenáramos alfabéticamente ¿cuál sería el último elemento en la lista?
+- Invierte el orden de los elementos de la colección. Esto quiere decir que el `Kiwi` deberá ser el primer elemento en la lista y los `Plátanos` los últimos.
+- Busca cuál es el elemento más pequeño, o sea, si los ordenáramos alfabéticamente ¿cuál sería el primer elemento en la lista?
+- Busca cuál es el elemento más grande, o sea, si los ordenáramos alfabéticamente ¿cuál sería el último elemento en la lista?
 - Ordena la lista alfabéticamente.
 - Busca en qué posición de la lista, ya ordenada, están la `Pera` y la `Naranja`.
 - Agrega tres `Manzana`s nuevas a la lista.
-- Desordena los elementos de la lista, es decir, órdenalos de manera aleatoria en la lista.
+- Desordena los elementos de la lista, es decir, ordénalos de manera aleatoria en la lista.
 - Busca cuántas `Manzana`s hay en la lista.
 
 <details>
@@ -55,7 +55,7 @@ también, como para demostrar que se han cumplido cada uno de los elementos del 
     }
 ```
 
-esto no es obligatorio pero simplificará mucho el proceso de imprimir los valores de la lista.
+esto no es obligatorio, pero simplificará mucho el proceso de imprimir los valores de la lista.
 
 5. El primer punto del reto indica que hay que llenar la lista con ciertos valores. Esto puedes hacerlo de dos formas, la primera es usando el método ***add*** de la interface **List** para agregar cada valor. La segunda forma es usando el método **addAll** de la clase **Collections**, de la siguiente forma:
 ```java
