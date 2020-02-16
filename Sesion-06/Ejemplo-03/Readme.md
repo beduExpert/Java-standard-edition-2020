@@ -61,8 +61,71 @@ será esta última forma la que usemos a lo largo del ejemplo.
 
 ![imagen](img/img_01.jpg)
 
-podemos ver que obtenemos los elementos en el mismo orden en el que los ingresamos a la lista.
+podemos ver que obtenemos los elementos en el mismo orden en el que los ingresamos a la lista y que vemos los dos números "tres" que ingresamos.
 
+9. Haremos lo mismo para el siguiente tipo de colección: **Set**. El caso de **Set** es muy similar al de **List**, ya que es una interfaz y existen muchas clases que la implementan. Para este ejemplo usaremos ***HashSet*** como implementación:
+```java
+Set<String> setCadenas = new HashSet<>();
+```
 
+10. En este caso también introduciremos los nombres de los números del "uno" al "cinco" e ingresaremos dos veces el número "tres":
+```java
+        setCadenas.add("uno");
+        setCadenas.add("dos");
+        setCadenas.add("tres");
+        setCadenas.add("tres");
+        setCadenas.add("cuatro");
+        setCadenas.add("cinco");
+```
 
+11. Mostraremos imprimeremos los valores sel **Set** usando un ciclo ***for*** mejorado. 
+```java
+        for (String cadena : setCadenas){
+            System.out.println(cadena);
+        }
+```
+
+12. La salida debe ser similar a la siguiente:
+
+![imagen](img/img_02.jpg)
+
+podemos observar dos cosas de esta salida. La primera es que los elementos aparecen en un orden diferente del que los fuimos ingresando en el **Set**, y la segunda es que sólo podemos ver un elemento "tres" y no los dos que ingresamos. Eso es porque los **Set** no admiten elemento repetidos; es por eso que sólo ha quedado un elemento "tres".
+
+13. Veamos cómo hacer esto mismo pero usando una clase propia. Creamos una nueva clase llamada **Numero** que tendrá una sola propiedad ***nombre***. Proporcionaremos un constructor para inicializar esta propiedad, y un método *getter* para recuperar su valor.
+```java
+    public class Numero {
+        private String nombre;
+
+        public Numero(String nombre) {
+            this.nombre = nombre;
+        }
+
+        public String getNombre() {
+            return nombre;
+        }
+    }
+```
+
+14. En el método **main** declaramos e inicializamos una nueva lista para mantener elementos de tipo **Numero** e ingresamos números del "uno" al "cinco". Nuevamente ingresaremos dos veces el número "tres":
+```java
+        List<Numero> listaNumeros = new ArrayList<>();
+        listaNumeros.add(new Numero("uno"));
+        listaNumeros.add(new Numero("dos"));
+        listaNumeros.add(new Numero("tres"));
+        listaNumeros.add(new Numero("tres"));
+        listaNumeros.add(new Numero("cuatro"));
+        listaNumeros.add(new Numero("cinco"));
+```
+15. Mostraremos, en un ciclo **for** los valores de los elementos de la lista; para esto haremos uso del método **getNombre**:
+```java
+        for (Numero numero : listaNumeros){
+            System.out.println(numero.getNombre());
+        }
+```
+
+16. Al ejecutar la aplicación, debemos obtener una salida similar a la siguiente:
+
+![imagen](img/img_03.jpg)
+
+podemos ver que nuevamente los elementos los recuperamos en el mismo orden en el que los ingresamos a la lista.
 
