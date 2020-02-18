@@ -22,7 +22,7 @@ En este ejemplo aprenderás a hacer uso de las colas de prioridad, en el cual se
 
 3. Dentro del paquete anterior crea una nueva clase llamada **Colas** y dentro de esta un método **main**.
 
-4. Dentro del método *main* declara una nueva variable de referencia de tipo **Queue<String>**, en esta variable se mantandrán las cadenas que posteriormente serán procesadas. Inicializa esta variable a un nuevo objeto de tipo **PriorityQueue**:
+4. Dentro del método *main* declara una nueva variable de referencia de tipo **Queue<String>**, en esta variable se mantendrán las cadenas que posteriormente serán procesadas. Inicializa esta variable a un nuevo objeto de tipo **PriorityQueue**:
 ```java
 	Queue<String> cola = new PriorityQueue<>();
 ```
@@ -36,7 +36,7 @@ En este ejemplo aprenderás a hacer uso de las colas de prioridad, en el cual se
         cola.add("cinco");
 
 ```
-6. Ahora, recorre el objeto `cola` usando un ciclo ***for***, lo que esperaríamos sería obener los elementos priorizados al irlos obteniendo de la cola, ya que en el caso de las cadenas, estas se ordenan de forma ascendente:
+6. Ahora, recorre el objeto `cola` usando un ciclo ***for***, lo que esperaríamos sería obtener los elementos priorizados al irlos obteniendo de la cola, ya que, en el caso de las cadenas, estas se ordenan de forma ascendente:
 
 ```java
         for (String cadena : cola) {
@@ -50,7 +50,7 @@ En este ejemplo aprenderás a hacer uso de las colas de prioridad, en el cual se
 
 Podemos ver que las cadenas están en un orden distinto al que las insertamos, pero no están en orden alfabético como estábamos esperando.
 
-Lo que ocurre en este caso es que estamos usando los método de **Collection** para recorrer la lista, y no los proporcionados por **Queue**. Para obtener los elementos en orden alfabético (su prioridad por default), debemos usar el método **poll** (o el método **remove**), el cual obtiene el elemento con la prioridad más alto y lo elimina de la cola. Para obtener todos los elementos, los colocamos en un ciclo ***while***:
+Lo que ocurre en este caso es que estamos usando los métodos de **Collection** para recorrer la lista, y no los proporcionados por **Queue**. Para obtener los elementos en orden alfabético (su prioridad por default), debemos usar el método **poll** (o el método **remove**), el cual obtiene el elemento con la prioridad más alto y lo elimina de la cola. Para obtener todos los elementos, los colocamos en un ciclo ***while***:
 
 ```java
         String valor = null;
@@ -66,7 +66,7 @@ Lo que ocurre en este caso es que estamos usando los método de **Collection** p
 
 podemos ver que en esta ocasión las cadenas las obtenemos en el orden esperado.
 
-Hagamos la misma prueba pero usando un objeto propio. 
+Hagamos la misma prueba, pero usando un objeto propio. 
 
 9. Creamos una nueva clase llamada **Libro**, la cual tendrá un **título**, que será una cadena, y una **prioridad** que será un número entero; será por esta última propiedad que daremos la prioridad a los elementos:
 ```java
@@ -85,7 +85,7 @@ Hagamos la misma prueba pero usando un objeto propio.
 	}
 ```
 
-con esto debería ser sufiente; sin embargo, así como cuando trabajamos con **Set** debemos sobrescribir el método **equals** para que la colección sepa si dos objetos son iguales, cuando trabajamos con **PriorityQueue** debemos implementar la interface **Comparable**, la cual permite saber si un objeto debe ir adelante o detrás de otro usando algún criterio. 
+con esto debería ser suficiente; sin embargo, así como cuando trabajamos con **Set** debemos sobrescribir el método **equals** para que la colección sepa si dos objetos son iguales, cuando trabajamos con **PriorityQueue** debemos implementar la interface **Comparable**, la cual permite saber si un objeto debe ir adelante o detrás de otro usando algún criterio. 
 
 Esta interface define un único método: **public int compareTo**, el cual se encarga de comparar el objeto actual contra otro que recibe como parámetro. String y las clases Wrapper implementan esta interfaz, pero nosotros debemos implementarla en nuestras propias clases. Eso es lo que haremos en libro:
 
