@@ -2,7 +2,7 @@
 
 ### OBJETIVO 
 
-- Hacer uso de distintos tipos de coleccones.
+- Hacer uso de distintos tipos de colecciones.
 - Aprender a ordenar colecciones con base en criterios predeterminados.
 
 #### REQUISITOS 
@@ -92,7 +92,7 @@ Creamos una nueva clase llamada **Telefono** que tenga un **numero** y una **pri
 	}
 ```
 
-9. La clase **Telefono** debe implementar la interface **Comparable**, usando la prioridad de los números de telefono:
+9. La clase **Telefono** debe implementar la interface **Comparable**, usando la prioridad de los números de teléfono:
 ```java
 	public class Telefono implements Comparable<Telefono> {
 	    @Override
@@ -128,7 +128,7 @@ Creamos una nueva clase llamada **Telefono** que tenga un **numero** y una **pri
         Collections.addAll(agenda.get("Fernando"), new Telefono("9753-8642", 1));
 ```
 
-13. El último paso es mostrar los números asociados. Para esto modificamos el ciclo ***for*** para obtener los elementos de la cola, junto y mostrarlos. El formato quedará algo extraño, pero en la siguiente sesión veremos como corregir eso:
+13. El último paso es mostrar los números asociados. Para esto modificamos el ciclo ***for*** para obtener los elementos de la cola, junto y mostrarlos. El formato quedará algo extraño, pero en la siguiente sesión veremos cómo corregir eso:
 ```java
 	 for (String nombre : agenda.keySet()) {
             Queue<Telefono> telefonos = agenda.get(nombre);
