@@ -1,4 +1,4 @@
-## Postwork 07: Opciones de Tareas
+## Postwork 07: Manejo de Tareas
 
 ### OBJETIVO
 
