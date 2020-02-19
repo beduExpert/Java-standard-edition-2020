@@ -10,7 +10,7 @@
 
 #### DESARROLLO
 
-En este postwork crearás un nuevo menú de opciones para manejar las tareas dentro de las listas. Este menú permitirá seleccionar las opciones para agregar nuevas tareas, eliminar tareas existenes y marcar tareas como realizadas.
+En este postwork crearás un nuevo menú de opciones para manejar las tareas dentro de las listas. Este menú permitirá seleccionar las opciones para agregar nuevas tareas, eliminar tareas existentes y marcar tareas como realizadas.
 
 También crearas una clase especializada para realizar las operaciones anteriores.
 
@@ -54,7 +54,7 @@ public class ManejadorTareas {
     private final Lector lector = new Lector();
 ```
 
-4. Ahora, implementaremos el método **nuevaTarea**. En este método pediremos al usuario que coloque la información de la nueva tarea. En este momento sólo será el nombre y en la siguiente sesión la modifcaremos para dolicitar también una fecha de expiración. Capturaremos el nombre de la tarea usando al isntancia de **Lector**:
+4. Ahora, implementaremos el método **nuevaTarea**. En este método pediremos al usuario que coloque la información de la nueva tarea. En este momento sólo será el nombre y en la siguiente sesión la modificaremos para solicitar también una fecha de expiración. Capturaremos el nombre de la tarea usando al instancia de **Lector**:
 ```java
         System.out.println("Nueva Tarea");
         System.out.println("Introduce los datos de la nueva tarea: ");
@@ -62,12 +62,12 @@ public class ManejadorTareas {
         String nombreTarea = lector.leeCadena();
 ```
 
-5. Una vez que ya tenemos el nombre de la tarea, simplemente regresamos una nueva instancia de la misma. Más adelante colocaremos esta instancia en una lista de tareas:
+5. Una vez que ya tenemos el nombre de la tarea, simplemente regresamos una nueva instancia de esta. Más adelante colocaremos esta instancia en una lista de tareas:
 ```java
         return new Tarea(nombreTarea);
 ```
 
-6. Ahora implementaremos el método **eliminaTarea**. Este método recibe como parémetro la `ListaTareas` de la que se eliminará. Lo primero que haremos será pedir el índice de la tarea a eliminar:
+6. Ahora implementaremos el método **eliminaTarea**. Este método recibe como parámetro la `ListaTareas` de la que se eliminará. Lo primero que haremos será pedir el índice de la tarea a eliminar:
 ```java
         System.out.println("Eliminar tarea");
 
@@ -83,12 +83,12 @@ public class ManejadorTareas {
         }
 
 ```
-8. Al terminar, eliminamos la tarea de la lista usando el método **eliminaTarea** de la instancia de **listaTareas** que el método recibe como parámetro. Recuerda que para convertir el índice introducido por el usuario al índide de la lista, debemos restarle ***1*** al primero:
+8. Al terminar, eliminamos la tarea de la lista usando el método **eliminaTarea** de la instancia de **listaTareas** que el método recibe como parámetro. Recuerda que para convertir el índice introducido por el usuario al índice de la lista, debemos restarle ***1*** al primero:
 ```java
         return listaTareas.eliminaTarea(indice - 1);
 ``` 
 
-9. Para terminar con esta clase, implementaremos el método **marcarTareaFinalizada**. Aquí haremos algo similar a lo que hicimos en el método anterior: primero pediremos el índice de la tarea que se marcará coomo finalizada, y después validamos que el índice del usuario no exceda el número de elementos en la lista:
+9. Para terminar con esta clase, implementaremos el método **marcarTareaFinalizada**. Aquí haremos algo similar a lo que hicimos en el método anterior: primero pediremos el índice de la tarea que se marcará como finalizada, y después validamos que el índice del usuario no exceda el número de elementos en la lista:
 ```java
         System.out.println("Finalizar tarea");
 
@@ -101,7 +101,7 @@ public class ManejadorTareas {
         }
 ```
 
-10. Una vez que hemos hecho esta validación, obtenemos la tarea indicada por el usaurio, colocamos la fecha de finalización como el momento actual, y colocamos el valor de su atributo **realizada** como **true**:
+10. Una vez que hemos hecho esta validación, obtenemos la tarea indicada por el usuario, colocamos la fecha de finalización como el momento actual, y colocamos el valor de su atributo **realizada** como **true**:
 ```java
         Tarea tarea = listaTareas.getTareas().get(indice - 1);
         tarea.setFechaRealizacion(LocalDate.now());
@@ -116,7 +116,7 @@ public class ManejadorTareas {
     private ManejadorTareas tareas = new ManejadorTareas();
 ```
 
-12. Lo siguiente es completar el método **actualizarListaDeTareas**, que en la sesión anterior quedó en la parte de capturar y validar el índice de la lista de tareas introducido por el usuario. Lo que haremos ahora será obtener la instancia de **ListaTareas** que se encuentra en el índice proprocionado:
+12. Lo siguiente es completar el método **actualizarListaDeTareas**, que en la sesión anterior quedó en la parte de capturar y validar el índice de la lista de tareas introducido por el usuario. Lo que haremos ahora será obtener la instancia de **ListaTareas** que se encuentra en el índice proporcionado:
 ```java
         ListaTareas listaActual = listasTareas.get(indice - 1);
 ```
@@ -154,7 +154,7 @@ public class ManejadorTareas {
                 break;
 ```
 
-17. Para la tercera opción, marcar una tarea como finalizada, hacemos algo similar. Usamos el método **marcarTareaFinalizada** de **ManejadorTareas** pasándola la lista de tareas como parámetro. Si regresa un valor indicamos que la tarea se marco como finalizada, si regresa nulo indicamos que la tarea no pudo ser marcada:
+17. Para la tercera opción, marcar una tarea como finalizada, hacemos algo similar. Usamos el método **marcarTareaFinalizada** de **ManejadorTareas** pasándola la lista de tareas como parámetro. Si regresa un valor indicamos que la tarea se marcó como finalizada, si regresa nulo indicamos que la tarea no pudo ser marcada:
 ```java
         case 3:
                 Tarea t2 = tareas.marcarTareaFinalizada(listaActual);
@@ -177,7 +177,7 @@ public class ManejadorTareas {
                 System.out.println("Opción desconocida.");
 ```
 
-20. Para terminar con el postwork. Ahora que ya podemos marcar tareas como finalizadas, modificaremos la forma en la que se muestran las tareas dentro de una lista. En la clase **ListaTareas**, dentro del método **muestraTareas** hay un ciclo que muestra todas las tareas de la lista. Dentro del cilo, modificaremos el contenido por el siguiente:
+20. Para terminar con el postwork. Ahora que ya podemos marcar tareas como finalizadas, modificaremos la forma en la que se muestran las tareas dentro de una lista. En la clase **ListaTareas**, dentro del método **muestraTareas** hay un ciclo que muestra todas las tareas de la lista. Dentro del ciclo, modificaremos el contenido por el siguiente:
 ```java
         Tarea tarea = tareas.get(i);
         System.out.println((i + 1) + " - " + tarea.getNombre() + "[" + (tarea.isRealizada() ? "█" : " ")  + "] " + (tarea.isRealizada() ? tarea.getFechaRealizacion() : ""));
