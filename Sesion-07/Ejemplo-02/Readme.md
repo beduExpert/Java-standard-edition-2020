@@ -53,7 +53,7 @@ En este reto, implementaremos la interface **Comparator** para comparar objetos 
 	}
 ```
 
-6. En ejemplos anteriores implementamos la funcionalidad del método a través de una operación de resta; aunque esto funciona, puede ocurrir un error de desbordamiento de buffer si uno de los valores es muy grande o muy pequeño. Es por esto que las clases wrappers proporcionan la implementación un método llamado **compare**, el cual recibe dos valores y regregsa un valor entero, que cumple con el contrato de **compareTo**. Es por esto que es una buena práctica el uso de este método para realizar la comparación:
+6. En ejemplos anteriores implementamos la funcionalidad del método a través de una operación de resta; aunque esto funciona, puede ocurrir un error de desbordamiento de buffer si uno de los valores es muy grande o muy pequeño. Es por esto por lo que las clases wrappers proporcionan la implementación un método llamado **compare**, el cual recibe dos valores y regresa un valor entero, que cumple con el contrato de **compareTo**. Es una buena práctica el uso de este método para realizar la comparación:
 ```java
     @Override
     public int compareTo(Persona persona) {
