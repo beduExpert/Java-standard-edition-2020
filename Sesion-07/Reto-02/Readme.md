@@ -2,7 +2,7 @@
 
 ### OBJETIVO 
 
-- Aprender a usar la inerface Comparator para ordenamiento de objetos propios.
+- Aprender a usar la interface Comparator para ordenamiento de objetos propios.
 
 #### REQUISITOS 
 
@@ -95,7 +95,7 @@ En este reto ordenarás a las personas por **nombre** y **apellido** en vez de p
 	}
 ```
 
-7. Enh la implementación del método ***compare***, lo que haremos será concatenar el valor del nombre y apellido de cada una de las personas recibidas, y comparar estos dos valores usando el método ***compareTo*** que implementa `String`. Así, tendremos la comparación de `CarolinaRivera` con `JuliaÁlvarez`, las cuales se compararán para quedar en orden alfabético. 
+7. En la implementación del método ***compare***, lo que haremos será concatenar el valor del nombre y apellido de cada una de las personas recibidas, y comparar estos dos valores usando el método ***compareTo*** que implementa `String`. Así, tendremos la comparación de `CarolinaRivera` con `JuliaÁlvarez`, las cuales se compararán para quedar en orden alfabético. 
 
 ```java
     public int compare(Persona persona1, Persona persona2) {
