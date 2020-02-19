@@ -61,6 +61,42 @@ En este reto, implementaremos la interface **Comparator** para comparar objetos 
     }
 ```
 
-![imagen](https://picsum.photos/200/300)
+7. En el método **main** creamos una serie de 5 personas y las agregamos a una lista, de tipo **ArrayList**.
+```java
+	Persona persona1 = new Persona("Arnulfo", "López",  1.65F);
+        Persona persona2 = new Persona("José", "Saavedra",  1.71F);
+        Persona persona3 = new Persona("Carolina", "Rivera",  1.51F);
+        Persona persona4 = new Persona("Rubén", "González",  1.60F);
+        Persona persona5 = new Persona("Julia", "Álvarez",  1.54F);
 
+        List<Persona> personas = new ArrayList<>();
+        Collections.addAll(personas, persona1, persona2, persona3, persona4, persona5);
+```
 
+8. Si en este momento imprimimos los elementos de la lista, veremos que aparecen en el mismo orden en el que los insertamos:
+
+```java
+        for (Persona p : personas){
+            System.out.println(p.getNombre() + " " + p.getApellido() + ": " + p.getEstatura());
+        }
+```
+
+![imagen](img/img_01.jpg)
+
+9. Ahora usaremos el método **sort** de la clase **Collections** para ordenar a las personas en la lista usando el criterio por default (el que indicamos al implementar la interface ***Comparable***:
+
+```java
+	Collections.sort(personas);
+```
+
+10. Al ejecutar la aplicación debemos obtener la siguiente salida:
+
+![imagen](img/img_02.jpg)
+
+11. Este método servirá con cualquier clase que implemente la interface **List**, para comprobarlo, cambiaremos la implementación que usamos de **List** de un ***ArrayList*** a una ***LinkedList***. La salida queda exactamente igual:
+
+```java
+	List<Persona> personas = new LinkedList<>();
+```
+
+![imagen](img/img_03.jpg)
