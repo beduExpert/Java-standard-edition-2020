@@ -22,12 +22,13 @@ En este reto ordenarás a las personas por **nombre** y **apellido** en vez de p
 ```
 
 - Al ordenar la lista, la salida deberá ser la siguiente:
-		Alejandro López
-		Arnulfo López
-		Carolina Rivera
-		José Saavedra
-		Julia Álvarez
-		Rubén González
+
+			Alejandro López
+			Arnulfo López
+			Carolina Rivera
+			José Saavedra
+			Julia Álvarez
+			Rubén González
 
 <details>
 	<summary>Solución</summary>
@@ -84,7 +85,57 @@ En este reto ordenarás a las personas por **nombre** y **apellido** en vez de p
         Collections.addAll(personas, persona1, persona2, persona3, persona4, persona5, persona6);
 ```
 
-</details> 
+6. Crea una nueva clase llamada **ComparadorPersonas**, que implemente la interface **Comparator**:
+```java
+	public class ComparadorPersonas implements Comparator<Persona> {
+	    @Override
+	    public int compare(Persona persona1, Persona persona2) {
+		
+	    }
+	}
+```
 
-![imagen](https://picsum.photos/200/300)
+7. Enh la implementación del método ***compare***, lo que haremos será concatenar el valor del nombre y apellido de cada una de las personas recibidas, y comparar estos dos valores usando el método ***compareTo*** que implementa `String`. Así, tendremos la comparación de `CarolinaRivera` con `JuliaÁlvarez`, las cuales se compararán para quedar en orden alfabético. 
+
+```java
+    public int compare(Persona persona1, Persona persona2) {
+        String nombreCompletoPersona1 = persona1.getNombre() + persona1.getApellido();
+        String nombreCompletoPersona2 = persona2.getNombre() + persona2.getApellido();
+
+        return nombreCompletoPersona1.compareTo(nombreCompletoPersona2);
+    }
+```
+
+8. En el método **main**, usamos la versión sobrecargada del método **Collections.sort**, la cual recibe como segundo parámetro una instancia de **Comparator**:
+
+```java
+	Collections.sort(personas, new ComparadorPersonas());
+```
+
+9. Al imprimir la lista, debemos obtener la salida mostrada en las instrucciones del reto. 
+
+![imagen](img/img_01.jpg)
+
+10. Si queremos modificar el orden de las personas, basta con crear una nueva clase que implemente **Comparator** y use una lógica distinta en la implementación del método **compare**. Por ejemplo, para ordenar las personas en orden alfabético inverso, basta con crear una nueva clase como la siguiente:
+```java
+    public class ComparadorInversoPersonas  implements Comparator<Persona> {
+    @Override
+    public int compare(Persona persona1, Persona persona2) {
+        String nombreCompletoPersona1 = persona1.getNombre() + persona1.getApellido();
+        String nombreCompletoPersona2 = persona2.getNombre() + persona2.getApellido();
+
+        return nombreCompletoPersona2.compareTo(nombreCompletoPersona1);
+    }
+}
+
+```
+
+y usarla en el método **sort**
+```java
+	Collections.sort(personas, new ComparadorInversoPersonas());
+```
+
+![imagen](img/img_02.jpg)
+
+</details> 
 
