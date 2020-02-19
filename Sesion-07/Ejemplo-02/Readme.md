@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Implementar la interface **Comparator** para realizar el ordenamiento de objetos propios.
+- Implementar la interface **Comparable** para realizar el ordenamiento de objetos propios.
 - Aprender la forma correcta de comparar valores numéricos.
 
 #### REQUISITOS
@@ -12,13 +12,13 @@
 
 #### DESARROLLO
 
-En este reto, implementaremos la interface **Comparator** para comparar objetos de tipo **Persona** y ordenarlos por estatura.
+En este reto, implementaremos la interface **Comparable** para comparar objetos de tipo **Persona** y ordenarlos por estatura.
 
-1. En el IDE IntelliJ IDEA, crea un nuevo proyecto llamado **Comparator**.
+1. En el IDE IntelliJ IDEA, crea un nuevo proyecto llamado **Comparable**.
 
 2. Dentro del proyecto crea un nuevo paquete llamado **org.bedu.java.jse.basico.sesion7.ejemplo2**.
 
-3. Dentro del paquete anterior crea una nueva clase llamada **Comparator** y dentro de esta un método **main**.
+3. Dentro del paquete anterior crea una nueva clase llamada **Comparable** y dentro de esta un método **main**.
 
 4. Creamos una clase **Persona** con tres atributos, dos `String` que representen su ***nombre*** y ***apellido*** y un `float` que represente su ***estatura***. Agregamos también el correspondiente constructor y *getters*:
 ```java
