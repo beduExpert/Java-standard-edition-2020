@@ -30,7 +30,7 @@ En el código de la sesión encontrarás un archivo *zip* llamado **directorios*
 	File archivo = new File("C:/temp/cursos/cursos.txt");
 ```
 
-6. Primero, mostraremo algunos atributos genéricos del archivo, como son su nombre, ruta, directorio padre, si es un archivo oculto, o si existe el archivo.
+6. Primero, mostramos algunos atributos genéricos del archivo, como son su nombre, ruta, directorio padre, si es un archivo oculto, o si existe el archivo.
 ```java
         System.out.println("Nombre del archivo:" + archivo.getName());
         System.out.println("Ruta: " + archivo.getPath());
@@ -58,7 +58,7 @@ En el código de la sesión encontrarás un archivo *zip* llamado **directorios*
         }
 ```
 
-9. Al ejecutar la apliccion, debe haber una salida como la siguiente:
+9. Al ejecutar la aplicación, debe haber una salida como la siguiente:
 
 ![imagen](img/img_01.jpg)
 
