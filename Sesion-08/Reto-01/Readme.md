@@ -15,7 +15,7 @@ En este reto le indicará a la aplicación un directorio raíz, y leerás todos 
 
 - Deberás mostrar una línea por cada archivo o directorio, mostrando sólo su nombre (no la ruta absoluta).
 - Deberás colocar una marca al inicio de la línea, indicando si se trata de un archivo (***A***) o un directorio (***D***).
-- Deberás mostrar una serie de guiones que representen el nivel de prodfundidad del archivo o directorio en el árbol. 
+- Deberás mostrar una serie de guiones que representen el nivel de profundidad del archivo o directorio en el árbol. 
 - La siguiente salida **NO** es válida:
 
 ![imagen](img/img_01.jpg)
@@ -38,7 +38,7 @@ En este reto le indicará a la aplicación un directorio raíz, y leerás todos 
 	File directorioInicial = new File( "C:/temp");	
 ```
 
-5. Ahora, crea un método que será el que se encargue de colocar las marcas al inicio de las líneas de información y de colocar los guiones que representan los directorios padre. Para calcular el número de guiones que se pondrán, puedes usar el método ***length*** de la clase **String**, la cual regresa el número de caracteres en la cadena, que en este caso será el directorio padre:
+5. Ahora, crea un método que será el que se encargue de colocar las marcas al inicio de las líneas de información y de colocar los guiones que representan los directorios padres. Para calcular el número de guiones que se pondrán, puedes usar el método ***length*** de la clase **String**, la cual regresa el número de caracteres en la cadena, que en este caso será el directorio padre:
 ```java
     private static void colocaEspacios(String directorioPadre, char simbolo){
         System.out.print("[" + simbolo + "]");
@@ -56,13 +56,13 @@ En este reto le indicará a la aplicación un directorio raíz, y leerás todos 
 	}
 ```
 
-7. Como en este punto puedes estar seguro que lo que el método recibe como parámetro es un directorio, puedes iniciar mostrando el símbolo del directorio, el número de guiones que representan su profundidad (o la ruta de su directorio padre) y su nombre:
+7. Como en este punto puedes estar seguro de que lo que el método recibe como parámetro es un directorio, puedes iniciar mostrando el símbolo del directorio, el número de guiones que representan su profundidad (o la ruta de su directorio padre) y su nombre:
 ```java
 	colocaEspacios(directorio.getParent(), 'D');
         System.out.println(directorio.getName());
 ```
 
-8. A continuación, obtén el contenido del directorio (subdirectorios y arhivos) usando el método **listFiles**, el cual regresa un arreglo de elementos **File**:
+8. A continuación, obtén el contenido del directorio (subdirectorios y archivos) usando el método **listFiles**, el cual regresa un arreglo de elementos **File**:
 
 ```java
 	File[] subdirectorios = directorio.listFiles();
@@ -89,7 +89,7 @@ En este reto le indicará a la aplicación un directorio raíz, y leerás todos 
         }
 ```
 
-11. Si se trata de un directrorio, simplemente vuelve a invocar al método **muestraContenidoDirectorio** pasando este nuevo directorio como argumento. A esto (invocar un método dentro del mismo método) se le conoce con el nombre de **recursividad**:
+11. Si se trata de un directorio, simplemente vuelve a invocar al método **muestraContenidoDirectorio** pasando este nuevo directorio como argumento. A esto (invocar un método dentro del mismo método) se le conoce con el nombre de **recursividad**:
 
 ```java
 	else if (archivo.isDirectory()) {
