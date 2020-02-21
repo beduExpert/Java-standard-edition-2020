@@ -14,7 +14,7 @@
 
 #### DESARROLLO
 
-En este ejemplo escribirás unas serie de cadenas de texto en un archivo de texto plano, y posteriormente leerás el contenido de ese mismo archivo. 
+En este ejemplo escribirás una serie de cadenas de texto en un archivo de texto plano, y posteriormente leerás el contenido de ese mismo archivo. 
 
 1. En el IDE IntelliJ IDEA, crea un nuevo proyecto llamado **Texto**.
 
@@ -29,7 +29,7 @@ En este ejemplo escribirás unas serie de cadenas de texto en un archivo de text
 
 `System.getProperty` es una forma que tiene Java de leer propiedades, o valores que puede establecer el usuario, el sistema operativo o la máquina virtual. `"user.home"` hace referencia al directorio raíz del usuario con el que se está ejecutando la aplicación. Con esto lograremos que generar un nuevo archivo en el directorio raíz del usuario que estás usando.
 
-5. Crea una nueva instancia de **BufferedWriter**, usando en su constructor la instancia de **FileWriter** creada hace un momento. No es necesario declarar dos variables, todos los pasos anteiores pueden encadenarse, de la siguiente forma:
+5. Crea una nueva instancia de **BufferedWriter**, usando en su constructor la instancia de **FileWriter** creada hace un momento. No es necesario declarar dos variables, todos los pasos anteriores pueden encadenarse, de la siguiente forma:
 ```java
 	BufferedWriter bw = new BufferedWriter(new FileWriter(System.getProperty("user.home") + "/archivo.txt"));
 ```
@@ -40,14 +40,14 @@ En este ejemplo escribirás unas serie de cadenas de texto en un archivo de text
  	bw.write("Esta es una línea de texto que irá en el archivo");
  ```
  
- 7. Al momento de escribir una línea de texto, no se inserta de forma automática un salto de linea. Esto quiere decir que si insertamos una nueva línea, esta quedará justo al lado de la que acabas de escribir. Para evistar esto, **BufferedWriter** tiene el método **newLine** que inserta un salto de línea:
+ 7. Al momento de escribir una línea de texto, no se inserta de forma automática un salto de linea. Esto quiere decir que, si insertamos una nueva línea, esta quedará justo al lado de la que acabas de escribir. Para evitar esto, **BufferedWriter** tiene el método **newLine** que inserta un salto de línea:
  ```java
  	bw.newLine();
  ```
  
  8. Otra forma de insertar una nueva línea, es usar el caracter de salto de línea (`\n`) al inicio o al final del texto que estás insertando:
  ```java
- 	bw.write("Esta es una segunda línea de texto que también irá irá en el archivo\n");	
+ 	bw.write("Esta es una segunda línea de texto que también irá en el archivo\n");	
  ```
  
  9. Finalmente, escribimos una línea más de texto y después cerramos el buffer de escritura con el método **close**:
