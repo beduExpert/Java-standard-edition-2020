@@ -38,12 +38,12 @@ En este reto realizarás le lectura y escritura de un archivo binario, en este c
 ```java
 	BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("beto_copia.png"));
 ```
-6. En esta ocasión, necesitarás un segundo buffer que será un arreglo de bytes en el que se colocará la información leída con el objeto **bis**, y el cual escribirás en el archivo de salida con **bos**. Este arreglod ebytes puede ser de cualquier tamaño, para este ejemlo puedes usar 1024:
+6. En esta ocasión, necesitarás un segundo buffer que será un arreglo de bytes en el que se colocará la información leída con el objeto **bis**, y el cual escribirás en el archivo de salida con **bos**. Este arreglo de bytes puede ser de cualquier tamaño, para este ejemplo puedes usar 1024:
 ```java
 	byte[] buffer = new byte[1024];
 ```
 
-7. El siguiente paso es leer la iamgen de entrada y copiarla a la imagen de salida. Para leer debes usar el método **read**, el cual colocará la imagen en el arreglo de bytes **buffer** y regresará el número de bytes que leyó. Este último valor es muy importante porque en el ciclo final de lectura, es muy posible que se lean menos de los 1024 bytes, que es el tamaño del buffer; si esto ocurre, también debeos escribir el número correcto de bytes en el archivo de salida.
+7. El siguiente paso es leer la imagen de entrada y copiarla a la imagen de salida. Para leer debes usar el método **read**, el cual colocará la imagen en el arreglo de bytes **buffer** y regresará el número de bytes que leyó. Este último valor es muy importante porque en el ciclo final de lectura, es muy posible que se lean menos de los 1024 bytes, que es el tamaño del buffer; si esto ocurre, también debeos escribir el número correcto de bytes en el archivo de salida.
 
 Cuando el objeto **bis** termine de leer el archivo, indicará que leyó **0** bytes. Esta es la indicación de que se ha terminado con la lectura:
 ```java
