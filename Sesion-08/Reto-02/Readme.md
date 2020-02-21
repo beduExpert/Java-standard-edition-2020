@@ -17,7 +17,7 @@ En este reto realizarás le lectura y escritura de un archivo binario, en este c
 
 - Copia la siguiente imagen de *Beto*:
 
-![imagen](img/img_01.png)
+![imagen](beto.png)
 
 - Lee el archivo anterior y cópialo a un nuevo archivo llamado ***beto_copia.png***. Abre el archivo con un visor de imágenes para comprobar que se copió de forma correcta y completa.	
 <details>
