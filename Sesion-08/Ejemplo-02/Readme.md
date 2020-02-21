@@ -34,6 +34,23 @@ En este ejemplo escribirás unas serie de cadenas de texto en un archivo de text
 	BufferedWriter bw = new BufferedWriter(new FileWriter(System.getProperty("user.home") + "archivo.txt"));
 ```
 
-![imagen](https://picsum.photos/200/300)
+
+ 6. Ahora puedes usar el método **write** de **BufferedWriter** para escribir líneas de texto plano, de la siguiente forma:
+ ```java
+ 	bw.write("Esta es una línea de texto que irá en el archivo");
+ ```
+ 
+ 7. Al momento de escribir una línea de texto, no se inserta de forma automática un salto de linea. Esto quiere decir que si insertamos una nueva línea, esta quedará justo al lado de la que acabas de escribir. Para evistar esto, **BufferedWriter** tiene el método **newLine** que inserta un salto de línea:
+ ```java
+ 	bw.newLine();
+ ```
+ 
+ 8. Otra forma de insertar una nueva línea, es usar el caracter de salto de línea (`\n`) al inicio o al final del texto que estás insertando:
+ ```java
+ 	bw.write("Esta es una segunda línea de texto que también irá irá en el archivo\n");	
+ ```
+ 
+ 
+ ![imagen](https://picsum.photos/200/300)
 
 
