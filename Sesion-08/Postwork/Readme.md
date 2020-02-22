@@ -151,7 +151,7 @@ esto es todo, con este método podrás leer nuevamente las tareas al iniciar la 
 
 16. Con esto hemos terminado. Si ejecutas la aplicación y crear algunas tareas y listas y después sales de la misma, en el directorio de tu usuario deberá aparecer un nuevo archivo llamado **.tareas**. Si vuelves a ejecutar la aplicación y revisas las listas de tareas existentes, estas deben estar como quedaron en la última ocasión:
 
-![imagen](img/img_01.jpg)
+![imagen](img/img_01.png)
 
 </details>
 
