@@ -20,6 +20,53 @@ Además, guardarás el estado de la aplicación, para que la lista de tareas sea
 <details>
         <summary>Solución</summary>
 
+1. En la clase **ListaTareasMain**, justo después de leer la opción seleccionada por el usuario, se muestra la opción seleccionada. El primer cambio será modificar la instrucción **println** por **printf** y usar el especificador de formato para mostrar números enteros. Cambia la siguiente instrucción:
+```java
+        System.out.println("\n\nLa opción seleccionada es: " + opcionSeleccionada);
+```
+
+por:
+```java
+        System.out.printf("%n%nLa opción seleccionada es: %d%n", opcionSeleccionada);
+```
+
+2. En la clase **ListasTareas**, dentro del método **verListaTareas** existe un ciclo en el que se muestran las listas de tareas que se han dado de alta. Dentro de ese ciclo reemplaza el siguiente código:
+```java
+        System.out.println((i + 1) + " - " + listasTareas.get(i).getNombre());
+```
+
+por:
+```java
+        System.out.printf("%d - %s%n", (i + 1), listasTareas.get(i).getNombre());
+```
+
+3. En el método **actualizarListaDeTareas** en el `case 2:` cambia:
+```java
+        System.out.println("Se eliminó la tarea " + t1.getNombre());
+```
+
+por:
+```java
+        System.out.printf("Se eliminó la tarea %s%n", t1.getNombre());
+```
+
+y en el `case 3:` cambia:
+```java
+        System.out.println("La tarea " + t2.getNombre() + " se completó el " + t2.getFechaRealizacion());      
+```
+por:
+```java
+        System.out.printf("La tarea %s se completó el %2$te de %2$tB de %2$tY%n", t2.getNombre(), t2.getFechaRealizacion());
+```
+4. Finalmente, en el método **eliminarListaDeTareas** cambia:
+```java
+        System.out.println("Se eliminó la lista de tareas: " + listaEliminada.getNombre());
+```
+por:
+```java
+        System.out.printf("Se eliminó la lista de tareas: %s%n", listaEliminada.getNombre());
+```
+
 5. Ahora, haremos que el estado de la aplicación sea persistente. Esto será lo último que hagamos durante este curso. Lo primero es indicar que las clases **Tarea** y **ListaTareas**, que se encuentran en el subpaquete de **modelo** implementen la interface **java.io.Serializable**. Esto le indica a la JVM que los obtejos de estas clases pueden ser enviadas a través de un flujo de bytes:
 
 ```java
