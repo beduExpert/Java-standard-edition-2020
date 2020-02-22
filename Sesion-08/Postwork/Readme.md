@@ -15,7 +15,7 @@
 
 En este postwork trabajarás con los mensajes dinámicos que se muestran al usuario (aquellos que muestran el valor de alguna variable). Para eso, harás uso del método ***printf*** y los especificadores de formato visto durante la sesión. 
 
-Además, guardarás el estado de la aplicación, para que la lista de tareas sea persistente aún después de cerrar la aplicación. De esta forma podrás usarla como una verdadera lista de seguimiento de tareas. Para lograr esto, deberás convertir las clase s **Tarea** y **ListaTareas** en **Serializable** y hacer uso de las clases ***ObjectOutputStream*** y ***ObjectInputStream***.
+Además, guardarás el estado de la aplicación, para que la lista de tareas sea persistente aún después de cerrar la aplicación. De esta forma podrás usarla como una verdadera lista de seguimiento de tareas. Para lograr esto, deberás convertir las clases **Tarea** y **ListaTareas** en **Serializable** y hacer uso de las clases ***ObjectOutputStream*** y ***ObjectInputStream***.
 
 <details>
         <summary>Solución</summary>
@@ -67,7 +67,7 @@ por:
         System.out.printf("Se eliminó la lista de tareas: %s%n", listaEliminada.getNombre());
 ```
 
-5. Ahora, haremos que el estado de la aplicación sea persistente. Esto será lo último que hagamos durante este curso. Lo primero es indicar que las clases **Tarea** y **ListaTareas**, que se encuentran en el subpaquete de **modelo** implementen la interface **java.io.Serializable**. Esto le indica a la JVM que los obtejos de estas clases pueden ser enviadas a través de un flujo de bytes:
+5. Ahora, haremos que el estado de la aplicación sea persistente. Esto será lo último que hagamos durante este curso. Lo primero es indicar que las clases **Tarea** y **ListaTareas**, que se encuentran en el subpaquete de **modelo** implementen la interface **java.io.Serializable**. Esto le indica a la JVM que los objetos de estas clases pueden ser enviadas a través de un flujo de bytes:
 
 ```java
         public class Tarea implements Serializable {
@@ -87,7 +87,7 @@ por:
 
 Esto es una buena práctica, ya que estarás leyendo y escribiendo información en este archivo. De esta forma te aseguras de que ambos procesos usen exactamente los mismos nombres; además, si en algún momento decides cambiar la ubicación o el nombre del archivo, bastará con modificar la constante y de inmediato todos los lugares en donde se usa estarán actualizados.
 
-7. Dentro de esta misma clase crea el método que cargará la lista de tareas. Este método se llamará **cargaTareas**; no recibirá ningún parámetro ni devolverá nada, pero si ocurre algun problema al momento de leer el archivo, será necesario reportar dicho problema a través de lanzar un error, conocido como Excepción. La firma del método es:
+7. Dentro de esta misma clase crea el método que cargará la lista de tareas. Este método se llamará **cargaTareas**; no recibirá ningún parámetro ni devolverá nada, pero si ocurre algún problema al momento de leer el archivo, será necesario reportar dicho problema a través de lanzar un error, conocido como Excepción. La firma del método es:
 
 ```java
         public void cargaTareas() throws Exception {
@@ -101,7 +101,7 @@ Esto es una buena práctica, ya que estarás leyendo y escribiendo información 
         }
 ```
 
-9. Si el archivo existe, crea una instancia de **ObjectInputStream**, que te permitirá recrear los objetos guardados en el archivo. Como la entrada de la información será un archivo, debes crear esta instancia usando un **FileInputStream** para leer del archivo cuyo nombre declaramos anteirormente en la constante:
+9. Si el archivo existe, crea una instancia de **ObjectInputStream**, que te permitirá recrear los objetos guardados en el archivo. Como la entrada de la información será un archivo, debes crear esta instancia usando un **FileInputStream** para leer del archivo cuyo nombre declaramos anteriormente en la constante:
 
 ```java
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(NOMBRE_ARCHIVO));
@@ -113,7 +113,7 @@ Esto es una buena práctica, ya que estarás leyendo y escribiendo información 
         listasTareas = (List<ListaTareas>) ois.readObject();
 ```
 
-esto es todo, con este método podrás leer nuevamente las tareas al iniciar la aplicaición.
+esto es todo, con este método podrás leer nuevamente las tareas al iniciar la aplicación.
 
 11. Lo siguiente es invocar a este método. Para ello, agrega un constructor de la clase e invoca a **cargaTareas** dentro de este. s importante que el constructor también lance una excepción, de esta forma si ocurre un error en la lectura del archivo, el error se propagará hasta el elemento que cree la nueva instancia de **ListasTareas**, que en este caso es el método **main**:
 ```java
@@ -122,7 +122,7 @@ esto es todo, con este método podrás leer nuevamente las tareas al iniciar la 
     }
 ```
 
-12. Ahora, agrega el método que permitirá guardar la lista de tareas. En la clase **ListasTareas** agrega un método llamado **guardarTareas**, el cual use un **ObjectOutputStream** para guardar la lista de tareas en el archivo apuntado por la constante. **ObjectOutputStream** proporciona el método **writeObject** para esribir el objeto en el archivo. 
+12. Ahora, agrega el método que permitirá guardar la lista de tareas. En la clase **ListasTareas** agrega un método llamado **guardarTareas**, el cual use un **ObjectOutputStream** para guardar la lista de tareas en el archivo apuntado por la constante. **ObjectOutputStream** proporciona el método **writeObject** para escribir el objeto en el archivo. 
 ```java
     public void guardarTareas() throws Exception {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(NOMBRE_ARCHIVO));
@@ -137,7 +137,7 @@ esto es todo, con este método podrás leer nuevamente las tareas al iniciar la 
                 System.out.println("Saliendo de la aplicación.");
                 break;
 ```
-14. El segundo cambio que debes hacer es indicar que el método **main** también puede lanzar una excepción; esto hará que si ocurre algún error, el mismo se propague ahsta la JVM y haga que la aplicación termine:
+14. El segundo cambio que debes hacer es indicar que el método **main** también puede lanzar una excepción; esto hará que, si ocurre algún error, el mismo se propague hasta la JVM y haga que la aplicación termine:
 ```java
         public static void main(String[] args) throws Exception {
                 ...
@@ -149,7 +149,7 @@ esto es todo, con este método podrás leer nuevamente las tareas al iniciar la 
         System.out.println("6. Guardar y Salir");
 ```
 
-16. Con esto hemos terminado. Si ejecutas la aplicación y crear algunas tareas y listas y después sales de la misma, en el directorio de tu usuario deberá aparecer un nuevo archivo llamado **.tareas**. Si vuelves a ejecutar la aplicación y revisas la listas de tareas existentes, estas deben estar como quedaron en la última ocasión:
+16. Con esto hemos terminado. Si ejecutas la aplicación y crear algunas tareas y listas y después sales de la misma, en el directorio de tu usuario deberá aparecer un nuevo archivo llamado **.tareas**. Si vuelves a ejecutar la aplicación y revisas las listas de tareas existentes, estas deben estar como quedaron en la última ocasión:
 
 ![imagen](img/img_01.jpg)
 
