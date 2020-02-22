@@ -1,16 +1,20 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Sesión 08: Manejo de archivos
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Aprender las formas existentes para escribir y leer archivos binarios y de texto plano.
+- Realizarás el formateo de datos de fechas y cadenas.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
-
+- La clase File
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+- Trabajo con archivos
+	- [Ejemplo 01](Ejemplo-01)
+	- [Reto 01](Reto-01)
+	
+- Formateo de información
+	- [Ejemplo 01](Ejemplo-03)
