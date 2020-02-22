@@ -22,7 +22,7 @@ En este reto usarás distintas banderas y modificadores de formato para cambiar 
 
 3. Dentro del paquete anterior crea una nueva clase llamada **Formato** y dentro de esta un método **main**.
 
-4. Dentro del método **main** vamos a definir cuatro constantes, que será la información que mostraremos el ususario:
+4. Dentro del método **main** vamos a definir cuatro constantes, que será la información que mostraremos el usuario:
 ```java
  	final String NOMBRE = "Beto";
         final int EDAD = 23;
@@ -39,7 +39,7 @@ En este reto usarás distintas banderas y modificadores de formato para cambiar 
 
 ![imagen](img/img_01.jpg)
 
-7. Ahora haremos una modificación, en vez de usar el método **println** usaremos el método **printf**, el cual permite dar formato a la cadena de salida. Usaremos los caracteres básicos y solo hareos algo difretene en la fecha, para colocar el índice del argumento indicando que se usará el cuarto argumento para todos los elementos de la fecha.
+7. Ahora haremos una modificación, en vez de usar el método **println** usaremos el método **printf**, el cual permite dar formato a la cadena de salida. Usaremos los caracteres básicos y solo haremos algo diferente en la fecha, para colocar el índice del argumento indicando que se usará el cuarto argumento para todos los elementos de la fecha.
 
 ```java
 	System.out.printf("Mi nombre es %s, tengo %d años, mi promedio es de %f y nací el día %4$tb %4$te, %4$ty\n", NOMBRE, EDAD, PROMEDIO, FECHA_NACIMIENTO);
@@ -66,12 +66,12 @@ para distinguir claramente los 8 caracteres, colocaremos el especificador entre 
 ```java
 	%05d
 ```
-11. En el tercer modificador (el del promedio) indicaremos que solo se deben mostrar dos caractres después del punto decimal:
+11. En el tercer modificador (el del promedio) indicaremos que solo se deben mostrar dos caracteres después del punto decimal:
 ```java
 	%.2f
 ```
 
-12. En el cuarto modificador (los de la fecha) indicaremos que se debe mostrar completo el nombre del mes, y que el año se debe mostrar con 4 digitos:
+12. En el cuarto modificador (los de la fecha) indicaremos que se debe mostrar completo el nombre del mes, y que el año se debe mostrar con 4 dígitos:
 ```java
 	%4$te de %4$tB de %4$tY
 ```
