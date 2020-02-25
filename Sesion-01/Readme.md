@@ -3,10 +3,9 @@
 
 ### OBJETIVOS 
 
-- Aprender qué es programar y qué es un algoritmo
-- Conocer el paradigma de programación Orientada a Objetos
-- Crear el primer Hola mundo.
-- Empaquetar una aplicación en un archivo jar
+- Identificar las características y ventajas del paradigma de programación orientada a objetos.
+- Programar el primer Hola mundo.
+- Empaquetar una aplicación en un archivo jar para su distribución.
 
 #### ORGANIZACION DE LA CLASE 
 
@@ -20,4 +19,3 @@
 
  - Creación de archivo Jar
  	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
