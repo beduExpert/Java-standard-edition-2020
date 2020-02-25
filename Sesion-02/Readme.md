@@ -4,8 +4,8 @@
 ### OBJETIVOS 
 
 - Conocer los tipos de datos que pueden manejarse en Java.
-- Aprender las reglas para el casting o conversión explícita de datos.
-- Aprender a usar las estructuras básicas de control de flujo.
+- Aplicar las reglas para el casting o conversión explícita de datos.
+- Usar las estructuras básicas de control de flujo.
 
 #### ORGANIZACION DE LA CLASE 
 
@@ -21,4 +21,3 @@
 	
 - Sentencias de ciclos o bucles
 	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
