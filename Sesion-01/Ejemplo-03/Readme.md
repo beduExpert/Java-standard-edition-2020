@@ -47,3 +47,27 @@ en donde están nuestra clase (**HolaMundo.class**) junto con un archivo de meta
 	java -cp ejemplo3.jar org.bedu.HolaMundo
 	
 Con el que le indicamos al comando `java` que debe buscar la clase **HolaMundo** dentro del archivo **ejemplo3.jar** y ejecutar la clase **org.bedu.HolaMundo**.
+
+Ahora, haremos que la aplicación ejecute su clase principal indicándole en qué clase se encuentra el método **main**. Para esto será necesario realizar una modificación en el archivo **MANIFEST.MF**.Como el archivo MANIFEST.MF se genera de forma automática al momento de crear el jar, no es buena idea modificarlo después de que el jar está creado, por esto mismo es mejor usar las opciones proporcionadas por la herramienta jar para modificar la generación de este archivo.
+
+4. En una terminal o consola, ejecuta el comando jar para ver las opciones que este tiene disponibles.
+
+![imagen](img/img_03.png)
+
+En las opciones aparece -e, revisa la descripción de esta, ya que será la opción que nos ayude a iniciar cuál es la clase principal de la aplicación.
+
+5. Dentro del directorio out ejecuta el siguiente comando:
+
+   	  jar cfe ejemplo3.jar org.bedu.HolaMundo .
+
+Con el cual indicaremos que crearemos un nuevo **JAR** con el nombre de **ejemplo3.jar**, que el punto de entrada (la clase principal) es **org.bedu.HolaMundo** y que debe colocar dentro de este todas las carpetas y clases del directorio actual (**out**).
+
+No debe haber ninguna salida en la consola, pero si abres el archivo **MANIFEST.MF** del jar generado, debe contener la siguiente línea:
+
+	Main-Class: org.bedu.HolaMundo
+
+6. Desde la misma línea de comandos ejecuta la aplicación. Nuevamente debes usar la herramienta java pero con otras opciones:
+
+     	java -jar ejemplo3.jar
+
+Revisa la salida en la consola.
