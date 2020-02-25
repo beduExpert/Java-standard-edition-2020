@@ -2,8 +2,8 @@
 
 ### OBJETIVOS 
 
-- Entender las características particulares de cada tipo de colección en Java.
-- Entender qué son y para qué sirven las interfaces Comparable y Comparator.
+- Distinguir las características particulares de cada tipo de colección en Java para poder seleccionar la mejor implementación dependiendo del problema que se necesita resolver.
+- Implementar las interfaces Comparable y Comparator.
 
 #### ORGANIZACION DE LA CLASE 
 
