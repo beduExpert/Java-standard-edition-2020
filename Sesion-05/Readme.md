@@ -2,9 +2,9 @@
 
 ### OBJETIVOS 
 
-- Aprender sobre miembros estáticos y finales.
-- Aprender sobre la sobrecarga de métodos y constructores.
-- Entender el concepto de herencia y su importancia en la programación Orientada a Objetos.
+-Distinguir las características de los miembros estáticos y finales.
+-Aplicar sobrecarga de métodos y constructores.
+-Escribir clases que hagan uso de herencia y aplicar sus ventajas en la programación Orientada a Objeto.
 
 #### ORGANIZACION DE LA CLASE 
 
