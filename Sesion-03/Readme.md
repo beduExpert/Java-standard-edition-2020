@@ -2,9 +2,9 @@
 
 ### OBJETIVOS 
 
-- Aprender a hacer uso de las clases que Java trae integradas
+- Hacer uso de las clases que Java trae integradas
 - Crear clases y métodos propios para encapsular funcionalidades
-- Aprender los conceptos de acoplamiento y cohesión
+- Aplicar los conceptos de acoplamiento y cohesión
 
 #### ORGANIZACION DE LA CLASE 
 
