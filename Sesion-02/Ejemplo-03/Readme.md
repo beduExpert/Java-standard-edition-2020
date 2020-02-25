@@ -1,5 +1,5 @@
 
-## Ejemplo 03: Uso de for
+## Ejemplo 03: Uso de for y while
 
 ### OBJETIVO
 
@@ -101,3 +101,36 @@ Con esto, la salida debe ser:
 	El valor actual del arreglo es 9
 	El valor actual del arreglo es 10
 
+Ahora, modificaremos la aplicación para hacer uso de un ciclo **while**.
+
+11. Recuerda que en el caso de **while**, la variable que se usa como índice debe declararse e inicializarse afuera del ciclo.
+
+Esta variable podemos incrementarla dentro del ciclo, en la condición, de la siguiente forma:
+```java
+	short i = 0;
+
+        while (++i <= 10) {
+            System.out.println("El valor de i es " + i);
+        }
+```
+12. Ejecuta el código de la aplicación, con lo que debes obtener la siguiente salida:
+
+	     El valor de i es 1
+	     El valor de i es 2
+	     El valor de i es 3
+	     El valor de i es 4
+	     El valor de i es 5
+	     El valor de i es 6
+	     El valor de i es 7
+	     El valor de i es 8
+	     El valor de i es 9
+	     El valor de i es 10
+
+Nota que como estamos incrementando el valor de **i** en la condición, debemos inicializar su valor en **0**. Si queremos cambiar esto, podemos usar un ciclo **do...while**, de la siguiente forma:
+ ```java
+	short i = 1;
+
+        do {
+            System.out.println("El valor de i es " + i);
+        } while (i++ < 10);
+```
