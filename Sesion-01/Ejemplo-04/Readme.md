@@ -63,23 +63,6 @@ public class Autor {
 	 - numeroPaginas
 
 ```java
-public class FiguraPlana {
-    private final double base;
-    private final double altura;
-
-    public double getBase() {
-        return base;
-    }
-
-    public double getAltura() {
-        return altura;
-    }
-}
-```
-
-5. Agrega un constructor que reciba ambos parámetros para que de esta forma puedan ser inicializados.
-
-```java
 public class Libro {
     private String titulo;
     private Autor autor;
@@ -138,15 +121,6 @@ public class Libro {
 8. Ahora, crea una instancia de la clase **Libro**, y establece sus atributos. No olvides usar la instancia de **Autor** creada hace un momento:
 
 ```java
-    public Triangulo(double base, double altura, String estilo) {
-        super(base, altura);
-        this.estilo = estilo;
-    }
-```
-
-9. Ahora, agregamos dos métodos más, uno que permita calcular el área del triángulo y otro que muestre su estilo
-
-```java
         Libro libro = new Libro();
         libro.setAutor(autor);
         libro.setTitulo("Persepolis");
@@ -162,4 +136,4 @@ public class Libro {
 
 11. Al ejecutar la aplicación, la salida debe ser la siguiente:
 
-![imagen](img/img_01.jpg)
+![imagen](img/img_01.png)
