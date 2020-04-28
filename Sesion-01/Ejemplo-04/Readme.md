@@ -1,73 +1,165 @@
-
-## Ejemplo 03: Creación de archivo Jar
+## Ejemplo 4: Programación Orientada a Objetos
 
 ### OBJETIVO
 
-- Aprender a empaquetar la aplicación en un archivo **.jar** para su distribución.
+- Aplicar las bases de la Programación Orientada a Objetos creando una clase `Libro` que haga uso de una clase `Autor`.
+- Separar cada una de las clases dentro de su propio archivo.
+- Colocar métodos **getter** y **setter** dentro de las clases para poder leer y establecer los valores de sus atributos.
 
 #### REQUISITOS
 
-1. Tener instalado el JDK 8 o superior.
-2. Tener acceso a una terminal o línea de comandos.
-3. Tener agregada en la variable PATH la ruta de la herramienta `jar`.
+1. Tener instalada la última versión del JDK 8.
+2. Tener instalada la última versión de IntelliJ IDEA Community.
+
 
 #### DESARROLLO
 
-Un jar, o Java ARchive, es un archivo que nos permite agrupar las clases que conforman nuestra aplicación, junto con alguos metadatos que permiten que este se ejecute como cualquier otra aplicación de nuestra computadora. Un jar es una forma especial de zip, que la JVM puede interpretar para ejecutar nuestra aplicación.
+1. En el IDE IntelliJ IDEA, crea un nuevo proyecto llamado **OrientacionObjetos**.
 
-En este ejemplo vamos a empaquetar nuestra aplicación en un jar para poder ejecutarlo de una forma más sencilla. 
+2. Dentro del proyecto crea un nuevo paquete llamado **org.bedu.java.jse.basico.sesion1.ejemplo4**.
 
-1. Tomamos el código de cualqiera de los ejemplos, en este caso usaremos como base el Ejemplo 2, en el que realizamos la compilación de las clases de la aplicación desde la línea de comandos. Para poder crear el jar debemos abrir una terminal y situarnos adetro del directorio `out`, que contiene las clases que se generaron.
+3. Dentro del paquete anterior crea una nueva clase llamada **Autor** con los siguientes atributos:
+	- nombre
+	- apellido
+	- edad
 
-2. Una vez dentro del directorio `out`, ejecutamos el siguiente comando:
+para cada uno de los atributos anteriores agrega un método **getter** y **setter**:
 
-		jar cf ejemplo3.jar .
-		
-En donde:
+```java
+public class Autor {
+    private String nombre;
+    private String apellido;
+    private int edad;
 
-* **jar** es el nombre de la herramienta que usamos para generar estos archivos.
-* **c** indica que se quiere crear un archivo JAR.
-* **f** indica que se quiere que la salida sea a un archivo en vez de a la salida estándar (la consola).
-* **ejemplo3.jar** es el nombre de archivo que se generará.
-* **.** el último argumento indica qué archivos serán incluidos en el jar; el punto indica que se incluirán todas las carpetas y archivos que están en donde nos encontramos.
+    public String getNombre() {
+        return nombre;
+    }
 
-al ejecutar el comando podemos ver que se ha creado el archivo jar correspondiente.
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-![imagen](img/img_01.png)
+    public String getApellido() {
+        return apellido;
+    }
 
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
-Si abres el archivo podrás ver la siguiente estructura:
+    public int getEdad() {
+        return edad;
+    }
 
-![imagen](img/img_02.png)
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+}
+```
 
-en donde están nuestra clase (**HolaMundo.class**) junto con un archivo de meta información (**META-INF**).
+4. Crea una nueva clase llamada **Libro**; esta clase hará uso de una instancia de `Autor` como uno de sus atributos. La clase libro tendrá los siguientes atributos, con sus correspondientes *getters**:
+	 - titulo
+	 - autor
+	 - numeroPaginas
 
-3. Ejecuta ahora la aplicación desde este archivo jar. Para eso, debes usar el siguiente comando:
+```java
+public class FiguraPlana {
+    private final double base;
+    private final double altura;
 
-	java -cp ejemplo3.jar org.bedu.HolaMundo
+    public double getBase() {
+        return base;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+}
+```
+
+5. Agrega un constructor que reciba ambos parámetros para que de esta forma puedan ser inicializados.
+
+```java
+public class Libro {
+    private String titulo;
+    private Autor autor;
+    private int numeroPaginas;
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Autor getAutor() {
+        return autor;
+    }
+
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+
+    public int getNumeroPaginas() {
+        return numeroPaginas;
+    }
+
+    public void setNumeroPaginas(int numeroPaginas) {
+        this.numeroPaginas = numeroPaginas;
+    }
+}
+```
+
+6. Crea una clase **OrientacionObjetos** y dentro de esta un método **main**:
+```java
+	public class OrientacionObjetos {
+
+		public static void main(String[] args) {
 	
-Con el que le indicamos al comando `java` que debe buscar la clase **HolaMundo** dentro del archivo **ejemplo3.jar** y ejecutar la clase **org.bedu.HolaMundo**.
+		}
+	}
+```
 
-Ahora, haremos que la aplicación ejecute su clase principal indicándole en qué clase se encuentra el método **main**. Para esto será necesario realizar una modificación en el archivo **MANIFEST.MF**.Como el archivo MANIFEST.MF se genera de forma automática al momento de crear el jar, no es buena idea modificarlo después de que el jar está creado, por esto mismo es mejor usar las opciones proporcionadas por la herramienta jar para modificar la generación de este archivo.
+7. En el método **main** crea una nueva instancia de `Autor` estableciendo sus atributos:
 
-4. En una terminal o consola, ejecuta el comando jar para ver las opciones que este tiene disponibles.
+```java
+    public static void main(String[] args) {
+        
+	Autor autor = new Autor();
+        autor.setNombre("Marjane");
+        autor.setApellido("Satrapi");
+        autor.setEdad(50);
+	
+    }
+	
+```
 
-![imagen](img/img_03.png)
+8. Ahora, crea una instancia de la clase **Libro**, y establece sus atributos. No olvides usar la instancia de **Autor** creada hace un momento:
 
-En las opciones aparece -e, revisa la descripción de esta, ya que será la opción que nos ayude a iniciar cuál es la clase principal de la aplicación.
+```java
+    public Triangulo(double base, double altura, String estilo) {
+        super(base, altura);
+        this.estilo = estilo;
+    }
+```
 
-5. Dentro del directorio out ejecuta el siguiente comando:
+9. Ahora, agregamos dos métodos más, uno que permita calcular el área del triángulo y otro que muestre su estilo
 
-   	  jar cfe ejemplo3.jar org.bedu.HolaMundo .
+```java
+        Libro libro = new Libro();
+        libro.setAutor(autor);
+        libro.setTitulo("Persepolis");
+        libro.setNumeroPaginas(368);
+```
 
-Con el cual indicaremos que crearemos un nuevo **JAR** con el nombre de **ejemplo3.jar**, que el punto de entrada (la clase principal) es **org.bedu.HolaMundo** y que debe colocar dentro de este todas las carpetas y clases del directorio actual (**out**).
+10. Para terminar, muestra en pantalla el nombre del libro y, en una línea diferente, el nombre del autor:
 
-No debe haber ninguna salida en la consola, pero si abres el archivo **MANIFEST.MF** del jar generado, debe contener la siguiente línea:
+```java
+	System.out.println("Libro: " + libro.getTitulo() );
+        System.out.println("Autor: " + libro.getAutor().getNombre() + " " + libro.getAutor().getApellido());
+```
 
-	Main-Class: org.bedu.HolaMundo
+11. Al ejecutar la aplicación, la salida debe ser la siguiente:
 
-6. Desde la misma línea de comandos ejecuta la aplicación. Nuevamente debes usar la herramienta java pero con otras opciones:
-
-     	java -jar ejemplo3.jar
-
-Revisa la salida en la consola.
+![imagen](img/img_01.jpg)
